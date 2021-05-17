@@ -58,18 +58,74 @@
 
 
 
-
-
-
-
 .Hero {
+  display: flex;
+  flex-wrap: wrap;
+  overflow:scroll;
   justify-items: center;
   align-items: center;
+  height: 720px;
   width: 100vw;
-  height: 45rem;
+  background-color: #000001;
 }
 
+.section1{
+  height: 800px;
+  width: 100vw; 
+  display: flex;
+  flex-wrap: nowrap;
+ /* background-image: url('https://i.pinimg.com/originals/11/3a/4c/113a4c1bcebaba2d3bd4cd25780dbcff.jpg'); */
+}
+#laptop{
+  height: 800px ;
+  width: auto;
+  position: relative;
+  right: -60px;
+}
 
+.section-shape{
+  background:#161d26;
+  height: 1100px;
+  width: 100vw;
+}
+
+.hero-stripe{
+  height: 500px;
+  width: 100vw;
+  transform: skewY(-11deg);
+  position: relative;
+  top: -150px;
+  background-color: #1f2935;
+  box-shadow: 0px 0px 38px #0000016b;
+  
+}
+.normalize-box{
+  transform: skewY(11deg);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+#portrait{
+  height: 650px ;
+  width: auto;
+  position: relative;
+  top: -150px;
+  right: -90px;
+}
+
+.text-box{
+  height: 350px;
+  width: 450px;
+  position: relative;
+  top: 150px;
+  left: 80px;
+}
+
+.hero-content{
+  height: 500px;
+  width: 100vw;
+  
+}
 
 
 
@@ -86,6 +142,7 @@
   font-weight: 600;
   font-size: 13px;
   color:#95A5C6;
+  box-shadow: 0px -20px 8px #0000016b;
 }
 
 .footer-icon-area{
