@@ -41,6 +41,7 @@ function Hero() {
           </div>
         </section>
         <section id="contact-me" className="section-shape">
+          <div id="attenuator">
           <div className="hero-stripe"></div>
           <div  className="hero-content">
           <div className="content-text-box">
@@ -48,6 +49,7 @@ function Hero() {
             libero ratione illum officia delectus molestias ea nobis pariatur
             nesciunt? Eius exercitationem laudantium autem necessitatibus totam
             magni voluptate, recusandae minus quae!
+          </div>
           </div>
           </div>
         </section>
