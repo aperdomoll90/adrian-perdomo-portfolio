@@ -6,44 +6,53 @@ import laptop from '../elements/laptop.png'
 
 function Hero() {
   return (
-    <section className="Hero">
-      <section className="section1 ">
-        <div className="text-box">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
-          libero ratione illum officia  
-        </div>
-
-        <img src={laptop} id="laptop" />
-      </section>
-      <section className="section-shape">
-        <div className="hero-stripe">
-          <div className="normalize-box">
-            <div className="text-box">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
-              libero ratione illum officia delectus molestias ea nobis pariatur
-              nesciunt? Eius exercitationem laudantium autem necessitatibus
-              totam magni voluptate, recusandae minus quae!
-            </div>
-            <img src={portrait} id="portrait" />
+    <main className="main">
+      <section className="Hero">
+        <section className="section1 ">
+          <div className="text-box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
+            libero ratione illum officia
           </div>
-        </div>
-        <div className="hero-content">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
-          libero ratione illum officia delectus molestias ea nobis pariatur
-          nesciunt? Eius exercitationem laudantium autem necessitatibus totam
-          magni voluptate, recusandae minus quae!
-        </div>
+          <div id="laptop-box">
+            <img src={laptop} id="laptop" />
+          </div>
+        </section>
+        <section className="section-shape">
+          <div className="hero-stripe">
+            <div className="normalize-box">
+              <div className="text-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolores, libero ratione illum officia delectus molestias ea
+                nobis pariatur nesciunt? Eius exercitationem laudantium autem
+                necessitatibus totam magni voluptate, recusandae minus quae!
+              </div>
+              <div id="portrait-box">
+                <img src={portrait} id="portrait" />
+              </div>
+            </div>
+          </div>
+          <div className="hero-content">
+          <div className="content-text-box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
+            libero ratione illum officia delectus molestias ea nobis pariatur
+            nesciunt? Eius exercitationem laudantium autem necessitatibus totam
+            magni voluptate, recusandae minus quae!
+            </div>
+          </div>
+        </section>
+        <section id="contact-me" className="section-shape">
+          <div className="hero-stripe"></div>
+          <div  className="hero-content">
+          <div className="content-text-box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
+            libero ratione illum officia delectus molestias ea nobis pariatur
+            nesciunt? Eius exercitationem laudantium autem necessitatibus totam
+            magni voluptate, recusandae minus quae!
+          </div>
+          </div>
+        </section>
       </section>
-      <section className="section-shape">
-        <div className="hero-stripe"></div>
-        <div className="hero-content contact-me">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
-          libero ratione illum officia delectus molestias ea nobis pariatur
-          nesciunt? Eius exercitationem laudantium autem necessitatibus totam
-          magni voluptate, recusandae minus quae!
-        </div>
-      </section>
-    </section>
+    </main>
   )
 }
 

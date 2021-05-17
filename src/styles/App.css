@@ -56,7 +56,12 @@
   text-shadow: 0.5px 1px 2px #7070707c;
 }
 
-
+.main{
+  display: flex;
+  justify-content: center;
+  max-width: 99.8vw;
+  
+}
 
 .Hero {
   display: flex;
@@ -64,34 +69,44 @@
   overflow:scroll;
   justify-items: center;
   align-items: center;
-  height: 720px;
-  width: 100vw;
+  height: 93vh;
+  width: 100%;
   background-color: #000001;
+
 }
 
 .section1{
   height: 800px;
-  width: 100vw; 
+  width: inherit; 
   display: flex;
   flex-wrap: nowrap;
- /* background-image: url('https://i.pinimg.com/originals/11/3a/4c/113a4c1bcebaba2d3bd4cd25780dbcff.jpg'); */
+  overflow: hidden;
+ 
 }
-#laptop{
+#laptop-box{
   height: 800px ;
-  width: auto;
+  width: 910px;
   position: relative;
   right: -60px;
+  overflow: hidden;
 }
+
+
+#laptop{
+  height: inherit ;
+}
+
+
 
 .section-shape{
   background:#161d26;
   height: 1100px;
-  width: 100vw;
+  width: inherit;
 }
 
 .hero-stripe{
   height: 500px;
-  width: 100vw;
+  width: inherit;
   transform: skewY(-11deg);
   position: relative;
   top: -150px;
@@ -101,16 +116,22 @@
 }
 .normalize-box{
   transform: skewY(11deg);
+  width: inherit;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-#portrait{
+#portrait-box{
   height: 650px ;
-  width: auto;
+  width: 595px;
   position: relative;
   top: -150px;
-  right: -90px;
+  overflow: hidden;
+
+}
+
+#portrait{
+  height: inherit ;
 }
 
 .text-box{
@@ -122,11 +143,24 @@
 }
 
 .hero-content{
-  height: 500px;
-  width: 100vw;
-  
+  width: inherit;
 }
 
+.content-text-box{
+  height: 350px;
+  width: 450px;
+  position: relative;
+  top: -190;
+  left: 400px;
+}
+
+
+#contact-me{
+background-image: url('https://i.pinimg.com/originals/11/3a/4c/113a4c1bcebaba2d3bd4cd25780dbcff.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+height: 900px;
+}
 
 
 
