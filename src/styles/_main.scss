@@ -23,14 +23,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.content-box {
-  height: 4rem;
-  width: 28rem;
-  position: relative;
-  top: 150px;
-  left: 80px;
-  text-align: left;
-}
+
 .header {
   display: flex;
   align-items: center;
@@ -77,17 +70,27 @@
   overflow: scroll;
   justify-items: center;
   align-items: center;
-  height: 93vh;
+  height: 100vh;
   width: 100%;
   background-color: $section1-color;
 }
 
 .section1 {
-  height: 800px;
-  width: inherit;
+  height:130vh;
+  width: 100vw;
   display: flex;
   flex-wrap: nowrap;
   overflow: hidden;
+}
+
+.content-box {
+  height: 4rem;
+  width: 28rem;
+  position: relative;
+  top: 150px;
+  left: 180px;
+  text-align: left;
+  z-index: 22;
 }
 #title-name {
   font-weight: $font-semibold;
@@ -123,10 +126,11 @@
 }
 
 #laptop-box {
-  height: 800px;
-  width: 910px;
+  height: 60rem;
+  width: auto;
   position: relative;
-  right: -60px;
+  top:4rem;
+  right: -1rem;
   overflow: hidden;
 }
 
@@ -136,8 +140,8 @@
 
 .section-shape {
   background: $secondary-color;
-  height: 1100px;
-  width: inherit;
+  height: 140vh;
+  width: 100vw;
 }
 
 .hero-stripe {

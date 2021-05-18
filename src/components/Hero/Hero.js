@@ -1,6 +1,5 @@
 import React from 'react'
 import './../../styles/App.css'
-import 'materialize-css'
 import { Button, Card, Row, Col } from 'react-materialize'
 
 import portrait from '../elements/profile.png'
@@ -46,7 +45,7 @@ function Hero() {
             </div>
           </div>
           <div className="hero-content">
-            <div className="content-content-box">
+            <div className="content-box">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
               libero ratione illum officia delectus molestias ea nobis pariatur
               nesciunt? Eius exercitationem laudantium autem necessitatibus
@@ -58,7 +57,7 @@ function Hero() {
           <div id="attenuator">
             <div className="hero-stripe"></div>
             <div className="hero-content">
-              <div className="content-content-box">
+              <div className="content-box">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Dolores, libero ratione illum officia delectus molestias ea
                 nobis pariatur nesciunt? Eius exercitationem laudantium autem
