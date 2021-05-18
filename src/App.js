@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/App.css'
+import './styles/_main.scss'
 import 'materialize-css';
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'

@@ -1,6 +1,8 @@
 import React from 'react'
 import './../../styles/App.css'
 import 'materialize-css'
+import { Button, Card, Row, Col } from 'react-materialize'
+
 import portrait from '../elements/profile.png'
 import laptop from '../elements/laptop.png'
 
@@ -9,9 +11,21 @@ function Hero() {
     <main className="main">
       <section className="Hero">
         <section className="section1 ">
-          <div className="text-box">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
-            libero ratione illum officia
+          <div className="content-box">
+            <div>
+              <p id="title-name">
+                Hello, I’m <span>Adrian Perdomo</span>
+              </p>
+              <p id="title-bold">Full Stack Dev</p>
+              <p id="title-description">
+                Full stack dev with a passion for Web Design\Automatization and
+                AI
+              </p>
+            </div>
+            <div className="button-field">
+              <Button>test</Button>
+              <Button>test</Button>
+            </div>
           </div>
           <div id="laptop-box">
             <img src={laptop} id="laptop" />
@@ -20,7 +34,7 @@ function Hero() {
         <section className="section-shape">
           <div className="hero-stripe">
             <div className="normalize-box">
-              <div className="text-box">
+              <div className="content-box">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Dolores, libero ratione illum officia delectus molestias ea
                 nobis pariatur nesciunt? Eius exercitationem laudantium autem
@@ -32,25 +46,25 @@ function Hero() {
             </div>
           </div>
           <div className="hero-content">
-          <div className="content-text-box">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
-            libero ratione illum officia delectus molestias ea nobis pariatur
-            nesciunt? Eius exercitationem laudantium autem necessitatibus totam
-            magni voluptate, recusandae minus quae!
+            <div className="content-content-box">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
+              libero ratione illum officia delectus molestias ea nobis pariatur
+              nesciunt? Eius exercitationem laudantium autem necessitatibus
+              totam magni voluptate, recusandae minus quae!
             </div>
           </div>
         </section>
         <section id="contact-me" className="section-shape">
           <div id="attenuator">
-          <div className="hero-stripe"></div>
-          <div  className="hero-content">
-          <div className="content-text-box">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores,
-            libero ratione illum officia delectus molestias ea nobis pariatur
-            nesciunt? Eius exercitationem laudantium autem necessitatibus totam
-            magni voluptate, recusandae minus quae!
-          </div>
-          </div>
+            <div className="hero-stripe"></div>
+            <div className="hero-content">
+              <div className="content-content-box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolores, libero ratione illum officia delectus molestias ea
+                nobis pariatur nesciunt? Eius exercitationem laudantium autem
+                necessitatibus totam magni voluptate, recusandae minus quae!
+              </div>
+            </div>
           </div>
         </section>
       </section>
