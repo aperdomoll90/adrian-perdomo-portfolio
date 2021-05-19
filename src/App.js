@@ -2,14 +2,14 @@ import React from 'react'
 import './styles/_main.scss'
 import 'materialize-css';
 import Header from './components/Header/Header'
-import Hero from './components/Hero/Hero'
+import Main from './components/Main/Main.js'
 import Footer from './components/Footer/Footer'
 
 function App() {
   return (
-    <div className="App">
+    <div id="All">
       <Header />
-      <Hero />
+      <Main />
       <Footer />
     </div>
   )
