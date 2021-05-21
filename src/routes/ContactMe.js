@@ -5,7 +5,7 @@ import portrait from '../components/elements/profile.png'
 
 function ContactMe() {
   return (
-    <>
+    <main className="main">
       <section className="section section-feature">
         <div className="titleBox">
           <div>
@@ -71,7 +71,7 @@ function ContactMe() {
           </div>
         </div>
       </section>
-    </>
+    </main>
   )
 }
 

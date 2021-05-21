@@ -2,7 +2,10 @@ import React from 'react'
 import '../styles/_main.scss'
 
 function Resume() {
-  return <p>Resume</p>
+  return(
+    <main className="main">
+      <p>Resume</p>
+      </main>)
 }
 
 export default Resume

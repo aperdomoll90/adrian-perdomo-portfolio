@@ -93,10 +93,35 @@
     font-weight: $font-bold;
     color: $title-font-color;
     font-size: 3.4rem;
+    & span {
+      color: $button-orange-color;
+      font-size: 3.5rem;
+    }
+  }
+  &-bold {
+    font-weight: $font-bold;
+    color: $title-font-color;
+    font-size: 3.4rem;
+    
   }
 
   &-description {
     font-size: 0.8rem;
+  }
+  &-portfolio{
+    font-weight: $font-bold;
+    color: $title-font-color;
+    font-size: 2.8rem;
+
+    & span {
+      color: $button-orange-color;
+      font-size: 3.7rem;
+    }
+
+    &-content{
+    
+    font-size: 1.2rem;
+    }
   }
 
   &-buttonField {
@@ -119,6 +144,10 @@
   transform: skewY(-6deg);
   background-color: $primary-StripeColor;
   box-shadow: 0px 15px 38px #0000016b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 
   &-normalizedBox {
     transform: skewY(6deg);
@@ -127,13 +156,15 @@
     flex-wrap: nowrap;
     justify-content: space-between;
   }
+ 
   &-content {
     height: 25rem;
     width: 32rem;
+    font-size: 1.2rem;
     position: relative;
     left: 5rem;
-    bottom: -9rem;
-    font-size: 1.2rem;
+    top: 15rem;
+    
   }
   & p {
     margin-top: 1rem;
@@ -143,25 +174,53 @@
     color: $title-font-color;
     font-size: 2.5rem;
   }
+
 }
 .portraitBox {
-  height: 41rem;
+  height: 43rem;
   width: 42rem;
   position: relative;
   overflow: hidden;
-  bottom: 6rem;
+  bottom: 3.4rem;
 
   &-portrait {
     height: inherit;
   }
+
 }
+.featureBox {
+  transform: skewY(6deg);
+  width: 20rem;
+  height: 25rem;
+  color: $title-font-color;
+  border-radius: 5px;
+  text-align: center;
+  &-f1{
+    background-color:rgba(65, 105, 225, 0.383);
+    box-shadow: 10px 15px 38px rgba(20, 37, 87, 0.829);
+  }
+  &-f2{
+    background-color:rgba(255, 255, 0, 0.383);
+    box-shadow: 10px 15px 38px rgba(119, 119, 21, 0.582);
+  }
+  &-f3{
+    background-color:rgba(255, 0, 0, 0.383);
+    box-shadow: 10px 15px 38px rgba(165, 25, 25, 0.829);
+  }
+  }
+
+  
+
+
 
 .contactMe {
   width: 80rem;
   height: 30rem;
+  padding: 2rem;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   border-radius: 5px;
   box-shadow: 0px 15px 38px #000001e5;
@@ -175,6 +234,18 @@
     justify-content: center;
     align-items: center;
   }
+  &-featureArea{
+    
+  }
+  &-projects{
+    width: 13rem !important;
+    height: 12rem !important;
+    margin-top: 1rem;
+    color: $title-font-color;
+    border-radius: 5px;
+    text-align: center;
+    background-color: red;
+    }
 }
 
 footer {

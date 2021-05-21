@@ -1,6 +1,7 @@
 import React from 'react'
-import '../../styles/_main.scss'
+import '../styles/_main.scss'
 import 'materialize-css'
+import { Link } from 'react-router-dom'
 
 function Header() {
   return (
@@ -9,9 +10,10 @@ function Header() {
       <a href="#!" class="brand-logo header-logo">AP.</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down header-nav">
-        <li><a href="">Contact me</a></li>
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">Resume</a></li>
+      <li><Link to="/portfolio">Portfolio</Link></li>
+      <li><Link to="/resume">Resume</Link></li>
+      <li><Link to="/">Contact me</Link></li>
+        
       </ul>
     </div>
   </nav>
