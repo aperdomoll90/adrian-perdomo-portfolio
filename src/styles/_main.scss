@@ -102,13 +102,12 @@
     font-weight: $font-bold;
     color: $title-font-color;
     font-size: 3.4rem;
-    
   }
 
   &-description {
     font-size: 0.8rem;
   }
-  &-portfolio{
+  &-portfolio {
     font-weight: $font-bold;
     color: $title-font-color;
     font-size: 2.8rem;
@@ -118,9 +117,8 @@
       font-size: 3.7rem;
     }
 
-    &-content{
-    
-    font-size: 1.2rem;
+    &-content {
+      font-size: 1.2rem;
     }
   }
 
@@ -156,7 +154,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
   }
- 
+
   &-content {
     height: 25rem;
     width: 32rem;
@@ -164,7 +162,6 @@
     position: relative;
     left: 5rem;
     top: 15rem;
-    
   }
   & p {
     margin-top: 1rem;
@@ -174,7 +171,6 @@
     color: $title-font-color;
     font-size: 2.5rem;
   }
-
 }
 .portraitBox {
   height: 43rem;
@@ -186,7 +182,6 @@
   &-portrait {
     height: inherit;
   }
-
 }
 .featureBox {
   transform: skewY(6deg);
@@ -195,23 +190,19 @@
   color: $title-font-color;
   border-radius: 5px;
   text-align: center;
-  &-f1{
-    background-color:rgba(65, 105, 225, 0.383);
+  &-f1 {
+    background-color: rgba(65, 105, 225, 0.383);
     box-shadow: 10px 15px 38px rgba(20, 37, 87, 0.829);
   }
-  &-f2{
-    background-color:rgba(255, 255, 0, 0.383);
+  &-f2 {
+    background-color: rgba(255, 255, 0, 0.383);
     box-shadow: 10px 15px 38px rgba(119, 119, 21, 0.582);
   }
-  &-f3{
-    background-color:rgba(255, 0, 0, 0.383);
+  &-f3 {
+    background-color: rgba(255, 0, 0, 0.383);
     box-shadow: 10px 15px 38px rgba(165, 25, 25, 0.829);
   }
-  }
-
-  
-
-
+}
 
 .contactMe {
   width: 80rem;
@@ -226,18 +217,32 @@
   box-shadow: 0px 15px 38px #000001e5;
   background-color: $secondary-transColor;
 
-  & div {
+  &-divider {
     width: 38rem;
     height: 26rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     justify-content: center;
     align-items: center;
   }
-  &-featureArea{
-    
+  &-featureArea {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
   }
-  &-projects{
+ 
+  &-skill {
+    width: 3rem !important;
+    height: 2rem !important;
+    margin-top: 1rem;
+    color: $title-font-color;
+    border-radius: 5px;
+    text-align: center;
+    background-color: red;
+  }
+  &-projects {
     width: 13rem !important;
     height: 12rem !important;
     margin-top: 1rem;
@@ -245,7 +250,7 @@
     border-radius: 5px;
     text-align: center;
     background-color: red;
-    }
+  }
 }
 
 footer {

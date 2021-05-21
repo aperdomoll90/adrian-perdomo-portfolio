@@ -48,19 +48,19 @@ function ContactMe() {
 
       <section className="section section-bottom">
         <div className="contactMe">
-          <div>
+          <div className="contactMe-divider ">
             <p className="titleBox-name">Most used Technologies</p>
-            <ul>
-              <li>JavaScript</li>
-              <li>Node</li>
-              <li>Sql</li>
-              <li>React</li>
-              <li>React Native</li>
-              <li>Electron</li>
-            </ul>
+            <div className="contactMe-featureArea">
+              <div className="contactMe-skill">JavaScript</div>
+              <div className="contactMe-skill">Node</div>
+              <div className="contactMe-skill">Sql</div>
+              <div className="contactMe-skill">React</div>
+              <div className="contactMe-skill">React Native</div>
+              <div className="contactMe-skill">Electron</div>
+            </div>
           </div>
-          <div>
-            {' '}
+
+          <div className="contactMe-divider contactInfo">
             <p className="titleBox-name ">Contact me</p>
             <ul>
               <li>Email</li>
