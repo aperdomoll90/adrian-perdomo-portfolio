@@ -9,10 +9,9 @@ function Header() {
       <a href="#!" class="brand-logo header-logo">AP.</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down header-nav">
-        <li><a href="">Home</a></li>
-        <li><a href="">Resume</a></li>
-        <li><a href="">Portfolio</a></li>
         <li><a href="">Contact me</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Resume</a></li>
       </ul>
     </div>
   </nav>

@@ -41,12 +41,33 @@
   background-color: $section1-color;
 }
 
-#section1 {
-  height: 130%;
-  width: 100%;
+.section {
+  height: 40rem;
+  width: 100vw;
   display: flex;
   flex-wrap: nowrap;
+
+  &-feature {
+    height: 47rem;
+  }
+
+  &-bottom {
+    background-color: $secondary-color;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#laptopBox {
+  height: 55rem;
+  width: auto;
+  position: relative;
+  top: 4rem;
   overflow: hidden;
+
+  & img {
+    height: inherit;
+  }
 }
 
 .titleBox {
@@ -93,81 +114,67 @@
   }
 }
 
-#laptopBox {
-  height: 55rem;
-  width: auto;
-  position: relative;
-  top: 4rem;
-  overflow: hidden;
-
-  & img {
-    height: inherit;
-  }
-}
-
-
-
 .Stripe {
   height: 35rem;
-  width: inherit;
-  transform: skewY(-11deg);
-  position: relative;
-  top: -150px;
-  background-color: $primary-color;
+  transform: skewY(-6deg);
+  background-color: $primary-StripeColor;
   box-shadow: 0px 15px 38px #0000016b;
-  
 
   &-normalizedBox {
-    transform: skewY(11deg);
+    transform: skewY(6deg);
     width: 100vw;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
-
   &-content {
     height: 25rem;
     width: 32rem;
     position: relative;
     left: 5rem;
     bottom: -9rem;
-    
+    font-size: 1.2rem;
+  }
+  & p {
+    margin-top: 1rem;
+  }
+  &-title {
+    font-weight: $font-semibold;
+    color: $title-font-color;
+    font-size: 2.5rem;
   }
 }
-
-
-
 .portraitBox {
-  height: 43rem;
-  width: auto;
+  height: 41rem;
+  width: 42rem;
   position: relative;
   overflow: hidden;
-  right: -6rem;
-  bottom: 9rem;
+  bottom: 6rem;
 
   &-portrait {
     height: inherit;
   }
 }
 
+.contactMe {
+  width: 80rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 15px 38px #000001e5;
+  background-color: $secondary-transColor;
 
-.heroContent {
-  width: 100vw;
-  height: 80rem ;
-
-  &-contactMe {
-    background-image: url('https://i.pinimg.com/originals/11/3a/4c/113a4c1bcebaba2d3bd4cd25780dbcff.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-  
+  & div {
+    width: 38rem;
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-}
-
-
-
-#attenuator {
-  background-color: rgba(255, 255, 255, 0.493);
-  height: inherit;
 }
 
 footer {
