@@ -7,6 +7,7 @@
 }
 @import 'materialize-css/dist/css/materialize.min.css';
 @import './_variables.scss';
+contactInfo
 
 #All {
   color: $font-third-color !important;
@@ -73,7 +74,7 @@
 
 .titleBox {
   height: 4rem;
-  width: 30rem;
+  width: 45rem;
   position: relative;
   top: 13rem;
   left: 5rem;
@@ -184,7 +185,7 @@
   transform: skewY(6deg);
   width: 20rem;
   height: 25rem;
-  color: $title-font-color;
+  // color: $title-font-color;
   border-radius: 5px;
   text-align: center;
   &-f1 {
@@ -199,11 +200,17 @@
     background-color: rgba(255, 0, 0, 0.383);
     box-shadow: 10px 15px 38px rgba(165, 25, 25, 0.829);
   }
-  &-schoolSkill{
+  &-schoolSkill {
     width: 40rem;
     height: 25rem;
-    background-color: rgba(65, 105, 225, 0.383);
-    box-shadow: 10px 15px 38px rgba(20, 37, 87, 0.829);
+    overflow: hidden;
+  }
+  &-reskillArea {
+    margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -213,7 +220,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-BE;
+  justify-content: space-between;
   align-items: center;
 
   &-shadow {
@@ -229,13 +236,14 @@
     justify-content: space-around;
     justify-content: space-around;
     align-items: center;
+    
   }
   &-skillArea {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 2rem;
+    justify-content: space-evenly;
+    
   }
 
   &-skill {
@@ -245,7 +253,6 @@
     color: $title-font-color;
     border-radius: 5px;
     text-align: center;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -276,19 +283,32 @@
     text-align: center;
     background-color: red;
   }
-  &-expGrid{
-    width: 85rem;
+  &-expGrid {
+    width: 78rem;
     height: 27rem;
     display: grid;
-    justify-content: space-between;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(2, 7rem 30rem);
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 85rem;
+    grid-template-rows: 3rem 30rem;
   }
- &-expTitle{
-  grid-row: 1/2;
-  grid-column: 1/2;
-  background-color: rgba(255, 192, 203, 0.281);
- }
+  &-expTitle {
+    height: 3rem;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  &-expContent {
+    height: 20rem;
+    width: 90vw;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-top: 1rem;
+    overflow: scroll;
+    & div {
+      margin-top: 1rem;
+    }
+  }
 
   &-blue {
     background-color: royalblue;
