@@ -36,13 +36,14 @@ function Portfolio() {
 
       <section className="section section-bottom">
         <div className="contactMe">
-          <div className="featureArea">
-            <div className="contactMe-projects ">Feature 1</div>
-            <div className="contactMe-projects ">Feature 2</div>
-            <div className="contactMe-projects ">Feature 3</div>
-            <div className="contactMe-projects ">Feature 3</div>
-            <div className="contactMe-projects ">Feature 2</div>
-            <div className="contactMe-projects ">Feature 1</div>
+          <div className="contactMe-projectGrid ">
+            <div className="contactMe-projectCard ">PROJECT 1</div>
+            <div className="contactMe-projectCard ">PROJECT 2</div>
+            <div className="contactMe-projectCard ">PROJECT 3</div>
+            <div className="contactMe-projectCard ">PROJECT 3</div>
+            <div className="contactMe-projectCard ">PROJECT 2</div>
+            <div className="contactMe-projectCard ">PROJECT 1</div>
+            <div className="contactMe-gridHero ">PROJECT 1</div>
           </div>
         </div>
       </section>

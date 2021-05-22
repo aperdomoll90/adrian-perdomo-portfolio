@@ -207,17 +207,19 @@
 .contactMe {
   width: 80rem;
   height: 30rem;
-  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-BE;
   align-items: center;
-  border-radius: 5px;
-  box-shadow: 0px 15px 38px #000001e5;
-  background-color: $secondary-transColor;
 
-  &-divider {
+
+  &-shadow{
+    border-radius: 5px;
+    background-color: $secondary-transColor;
+    box-shadow: 0px 15px 38px #000001e5;
+  }
+  &-2dividers {
     width: 35rem;
     height: 26rem;
     display: flex;
@@ -227,14 +229,14 @@
     align-items: center;
     
   }
-  &-featureArea {
+  &-skillArea {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     padding: 2rem;
   }
- 
+
   &-skill {
     width: 8rem !important;
     height: 2.5rem !important;
@@ -247,10 +249,27 @@
     align-items: center;
     justify-content: center;
   }
-
-  &-projects {
-    width: 13rem !important;
-    height: 12rem !important;
+ &-projectGrid{
+   width: 85rem;
+   height: 27rem;
+   display: grid;
+   justify-content: space-between;
+   grid-template-columns: repeat(4, auto) ;
+   grid-template-rows: repeat(2, auto);
+   
+ }
+ &-gridHero{
+  width: 20rem !important;
+  height: 30rem !important;
+  margin-top: 1rem;
+  border-radius: 5px;
+   grid-row: 1/3;
+   grid-column: 1/2;
+   background-color: rgba(255, 192, 203, 0.281);
+ }
+  &-projectCard {
+    width: 13.5rem !important;
+    height: 14.5rem !important;
     margin-top: 1rem;
     color: $title-font-color;
     border-radius: 5px;

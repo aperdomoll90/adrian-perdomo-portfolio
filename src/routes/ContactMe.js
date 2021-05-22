@@ -52,10 +52,10 @@ function ContactMe() {
       </div>
 
       <section className="section section-bottom">
-        <div className="contactMe">
-          <div className="contactMe-divider ">
+        <div className="contactMe  contactMe-shadow">
+          <div className="contactMe-2dividers ">
             <p className="titleBox-name">Most used Technologies</p>
-            <div className="contactMe-featureArea">
+            <div className="contactMe-skillArea">
               <div className="contactMe-skill contactMe-purple">JavaScript</div>
               <div className="contactMe-skill contactMe-yellow">Node</div>
               <div className="contactMe-skill contactMe-red">Sql</div>
@@ -68,7 +68,7 @@ function ContactMe() {
             </div>
           </div>
 
-          <div className="contactMe-divider contactInfo">
+          <div className="contactMe-2dividers contactInfo">
             <p className="titleBox-name ">Contact me</p>
             <ul>
               <li><img className="contactMe-icon" src={mail} alt="mail icon"/>Email</li>
