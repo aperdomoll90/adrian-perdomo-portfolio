@@ -20,7 +20,7 @@ function Portfolio() {
             </p>
           </div>
           <div className="titleBox-buttonField">
-            <a class="waves-effect waves-light btn-large">Button</a>
+            <a class="waves-effect waves-light btn-large">GitHub</a>
           </div>
         </div>
         <div id="laptopBox">
