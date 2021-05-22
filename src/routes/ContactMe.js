@@ -3,6 +3,11 @@ import '../styles/_main.scss'
 import laptop from '../components/elements//laptop.png'
 import portrait from '../components/elements/profile.png'
 
+import mail from '../components/elements/mail.png'
+import phone from '../components/elements/phone.png'
+import linkedin from '../components/elements/linkedin.png'
+import insta from '../components/elements/Instagram.svg'
+
 function ContactMe() {
   return (
     <main className="main">
@@ -66,10 +71,10 @@ function ContactMe() {
           <div className="contactMe-divider contactInfo">
             <p className="titleBox-name ">Contact me</p>
             <ul>
-              <li>Email</li>
-              <li>Phone Number</li>
-              <li>Linked</li>
-              <li>Instagram</li>
+              <li><img className="contactMe-icon" src={mail} alt="mail icon"/>Email</li>
+              <li><img className="contactMe-icon" src={phone} alt="phone icon"/>Phone Number</li>
+              <li><img className="contactMe-icon" src={linkedin} alt="linkedin icon"/>Linked</li>
+              <li><img className="contactMe-icon" src={insta} alt="insta icon"/>Instagram</li>
             </ul>
           </div>
         </div>
