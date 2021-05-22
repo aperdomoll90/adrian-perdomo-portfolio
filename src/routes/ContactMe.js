@@ -51,12 +51,15 @@ function ContactMe() {
           <div className="contactMe-divider ">
             <p className="titleBox-name">Most used Technologies</p>
             <div className="contactMe-featureArea">
-              <div className="contactMe-skill">JavaScript</div>
-              <div className="contactMe-skill">Node</div>
-              <div className="contactMe-skill">Sql</div>
-              <div className="contactMe-skill">React</div>
-              <div className="contactMe-skill">React Native</div>
-              <div className="contactMe-skill">Electron</div>
+              <div className="contactMe-skill contactMe-purple">JavaScript</div>
+              <div className="contactMe-skill contactMe-yellow">Node</div>
+              <div className="contactMe-skill contactMe-red">Sql</div>
+              <div className="contactMe-skill contactMe-red">React</div>
+              <div className="contactMe-skill contactMe-blue">React Native</div>
+              <div className="contactMe-skill contactMe-orange">Electron</div>
+              <div className="contactMe-skill contactMe-green">Mongo db</div>
+              <div className="contactMe-skill contactMe-purple">Firebase</div>
+              <div className="contactMe-skill contactMe-yellow">SASS</div>
             </div>
           </div>
 

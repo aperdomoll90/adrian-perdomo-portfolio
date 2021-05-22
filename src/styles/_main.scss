@@ -218,30 +218,36 @@
   background-color: $secondary-transColor;
 
   &-divider {
-    width: 38rem;
+    width: 35rem;
     height: 26rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    
   }
   &-featureArea {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    padding: 2rem;
   }
  
   &-skill {
-    width: 3rem !important;
-    height: 2rem !important;
+    width: 8rem !important;
+    height: 2.5rem !important;
     margin-top: 1rem;
     color: $title-font-color;
     border-radius: 5px;
     text-align: center;
-    background-color: red;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+
   &-projects {
     width: 13rem !important;
     height: 12rem !important;
@@ -250,6 +256,25 @@
     border-radius: 5px;
     text-align: center;
     background-color: red;
+  }
+
+  &-blue{
+    background-color: royalblue;
+  }
+  &-yellow{
+    background-color: yellow;
+  }
+  &-red{
+    background-color: red;
+  }
+  &-orange{
+    background-color: orange;
+  }
+  &-purple{
+    background-color: purple;
+  }
+  &-green{
+    background-color: green;
   }
 }
 
