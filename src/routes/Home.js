@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/_main.scss'
 import portrait from '../elements/profile.png'
+import Sapphire from '../elements/sapphireFeature/sapphire'
 
 function ContactMe() {
   return (
@@ -23,7 +24,16 @@ function ContactMe() {
       </section>
 
       <div className='Stripe'>
-        <div className='featureBox featureBox-f1'>Feature 1</div>
+        <div className='featureBox'>
+          <p>Mind Sapphire</p>
+          <Sapphire />
+          <div className="featureLinks">
+              <a href="" target="_Blank">Demo</a>
+              <a href="" target="_Blank">Github</a>
+              <a href="" target="_Blank">API</a>
+          
+          </div>
+        </div>
         <div className='featureBox featureBox-f2'>Feature 2</div>
         <div className='featureBox featureBox-f3'>Feature 3</div>
       </div>
@@ -40,24 +50,24 @@ function ContactMe() {
               <li>Institute Polytechnic Informatics Raul Cepero Bonilla 09/2005 – 07/2008</li>
             </ul>
           </div>
+        </div>
+        <div className='area3-2dividers'>
+          <p className='titleBox-name'>Most used Technologies</p>
+          <div className='area3-skillArea'>
+            <div className='area3-skill area3-yellow'>React</div>
+            <div className='area3-skill area3-blue'>React Native</div>
+            <div className='area3-skill area3-orange'>Electron</div>
+            <div className='area3-skill area3-purple'>JavaScript</div>
+            <div className='area3-skill area3-yellow'>SQL / NoSQL</div>
+            <div className='area3-skill area3-red'>HTML</div>
+            <div className='area3-skill area3-blue'>CSS</div>
+            <div className='area3-skill area3-yellow'>SASS</div>
+            <div className='area3-skill area3-green'>Node</div>
+            <div className='area3-skill area3-purple'>Express</div>
+            <div className='area3-skill area3-green'>Mongo db</div>
+            <div className='area3-skill area3-purple'>Firebase</div>
           </div>
-          <div className='area3-2dividers'>
-            <p className='titleBox-name'>Most used Technologies</p>
-            <div className='area3-skillArea'>
-              <div className='area3-skill area3-yellow'>React</div>
-              <div className='area3-skill area3-blue'>React Native</div>
-              <div className='area3-skill area3-orange'>Electron</div>
-              <div className='area3-skill area3-purple'>JavaScript</div>
-              <div className='area3-skill area3-yellow'>SQL / NoSQL</div>
-              <div className='area3-skill area3-red'>HTML</div>
-              <div className='area3-skill area3-blue'>CSS</div>
-              <div className='area3-skill area3-yellow'>SASS</div>
-              <div className='area3-skill area3-green'>Node</div>
-              <div className='area3-skill area3-purple'>Express</div>
-              <div className='area3-skill area3-green'>Mongo db</div>
-              <div className='area3-skill area3-purple'>Firebase</div>
-            </div>
-          </div>
+        </div>
       </section>
     </main>
   )
