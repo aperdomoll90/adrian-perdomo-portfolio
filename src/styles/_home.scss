@@ -20,7 +20,7 @@
     text-align: left;
     font-size: 1rem;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     z-index: 2;
   
@@ -63,6 +63,19 @@
       &-bold {
         font-size: 1.6rem;
       }
+    }
+  }
+
+  .personalLinks{
+    width: 15%;
+    height: 5%;
+    position: absolute;
+    top: 62%;
+    right: 37%;
+    display: flex;
+    justify-content: space-evenly;
+    & img {
+      background-color: $button-orange-color;
     }
   }
   // **************** Stripe Section

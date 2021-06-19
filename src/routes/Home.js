@@ -3,6 +3,8 @@ import '../styles/_main.scss'
 import portrait from '../elements/profile.png'
 import Sapphire from '../elements/sapphireFeature/sapphire'
 import affirmations from '../elements/affirma.png'
+import linkedin from '../elements/linkedin.png'
+import github from '../elements/github.png'
 
 function ContactMe() {
   return (
@@ -19,6 +21,10 @@ function ContactMe() {
               and I hope to improve lives through my work.
             </p>
           </div>
+        </div>
+        <div className="personalLinks">
+         <a href="https://www.linkedin.com/in/adrian-perdomo-12997474/" target="_Blank"><img src={linkedin}  className="btn btn-floating btn-large waves-effect waves-light "/></a> 
+         <a href="https://github.com/aperdomoll90" target="_Blank"> <img src={github}className="btn btn-floating btn-large waves-effect waves-light "/></a> 
         </div>
 
         <img src={portrait} id='portrait' />

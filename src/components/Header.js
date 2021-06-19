@@ -21,9 +21,9 @@ function Header() {
       <Link to='/resume'>
         <SideNavItem icon={<Icon>attachment</Icon>}>Resume </SideNavItem>
       </Link>
-      <Link to='/ContactMe'>
+      {/* <Link to='/ContactMe'>
         <SideNavItem icon={<Icon>mail</Icon>}>Contact Me </SideNavItem>
-      </Link>
+      </Link> */}
     </SideNav>
   )
 }
