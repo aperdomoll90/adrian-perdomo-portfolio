@@ -1,7 +1,7 @@
 @import './_variables.scss';
 
 .header {
-  width: 100%;
+  width: 100vw;
   height: 35vh;
   display: flex;
   align-items: flex-end;
@@ -47,18 +47,34 @@ h4 {
     font-weight: $font-bold;
   }
 }
-.portfolio {
-  height: 100%;
+@media only screen and (max-width: 1025px) {
+  .header {
+    height: 25vh;
+  }
+  .profileField {
+    height: 15%;
+    width: 100vw;
+    left: 0%;
+    top: 5%;
+    &-profile {
+      height: 80%;
+      width: 22%;
+    }
+    & p {
+      font-size: 2rem;
+    }
+  }
+}
+.portfolioContent {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 3%;
+  justify-content: space-between;
 }
 
 .vertical {
-  height: 148vh;
+  height: 128vh;
   left: 50%;
+  top: 40%;
   border-radius: 50%;
   border-left: 2px solid $font-test-color;
   position: absolute;
@@ -66,20 +82,26 @@ h4 {
 
 .left {
   width: 47%;
-  height: 150vh;
   display: flex;
   text-align: end;
   flex-direction: column;
-  justify-content: flex-end;
+  padding-left: 5%;
 }
 .right {
   width: 47%;
-  margin-top: -2%;
-  height: 150vh;
   display: flex;
   text-align: start;
   flex-direction: column;
-  justify-content: flex-start;
+}
+@media only screen and (max-width: 1025px) {
+  .vertical {
+    height: 130vh;
+    top: 30%;
+  }
+  .left {
+    height: 140vh;
+    overflow-y: scroll;
+  }
 }
 .company {
   color: $font-secondary-color;
@@ -99,17 +121,17 @@ h4 {
     display: flex;
     width: 7rem;
     height: 2.5rem;
-    margin-top: 1rem;
     align-items: center;
     justify-content: center;
   }
 }
 .contactMe {
-  width: 50vw;
+  width: 46vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   &-line {
+    width: 20vw;
     margin: 2%;
     display: flex;
     flex-direction: row;
@@ -119,5 +141,22 @@ h4 {
     width: 2rem;
     height: auto;
     margin-right: 3%;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .resumeSkills {
+    flex-direction: row;
+    width: 100%;
+    & p {
+      font-size: 0.7rem;
+      width: 4rem;
+      justify-content: space-between;
+    }
+  }
+  .contactMe {
+    &-line {
+      font-size: 0.5rem;
+    }
   }
 }

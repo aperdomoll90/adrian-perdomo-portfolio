@@ -7,7 +7,7 @@ import resumeProfile from '../elements/resumeProfile.png'
 
 function Resume() {
   return (
-    <main>
+    <main >
       <section className='header'>
         <div className='profileField'>
           <p>ADRIAN</p>
@@ -18,7 +18,7 @@ function Resume() {
         </div>
         <h3>FULL STACK SOFTWARE DEVELOPER</h3>
       </section>
-      <section className='portfolio'>
+      <section className='portfolioContent'>
         <Left />
         <div className='vertical'></div>
         <Right />
