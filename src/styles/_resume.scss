@@ -160,3 +160,25 @@ h4 {
     }
   }
 }
+
+.hobbyArea {
+    width:70%;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    & img {
+        width: 10vh;
+        margin: 3%;
+    }
+}
+@media only screen and (max-width: 1025px) {
+    .hobbyArea  {
+        width:90%;
+        flex-direction: row;
+    
+    & img {
+        width: 5.6vh;
+        height: auto;
+    }}
+}

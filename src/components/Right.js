@@ -3,6 +3,14 @@ import mail from '../elements/mail.png'
 import phone from '../elements/phone.png'
 import linkedin from '../elements/linkedin.png'
 import github from '../elements/github.png'
+import cooking from '../elements/cooking.png'
+import gym from '../elements/gym.png'
+import gardening from '../elements/gardening.png'
+import karaoke from '../elements/karaoke.png'
+import baking from '../elements/baking.png'
+import painting from '../elements/painting.png'
+import traveling from '../elements/traveling.png'
+
 
 function Right() {
   return (
@@ -64,7 +72,16 @@ function Right() {
       <br/>
       <div>
       <h4>HOBBIES</h4>
-       
+      <div className="hobbyArea">
+       <img src={gym}/>
+       <img src={cooking}/>
+       <img src={gardening}/>
+       <img src={karaoke}/>
+       <img src={baking}/>
+       <img src={painting}/>
+       <img src={traveling}/>
+
+       </div>
       </div>
     </div>
   )
