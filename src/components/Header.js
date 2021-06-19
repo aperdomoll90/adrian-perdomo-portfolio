@@ -19,7 +19,7 @@ function Header() {
         <SideNavItem icon={<Icon>home</Icon>}>Home</SideNavItem>
       </Link>
       <Link to='/resume'>
-        <SideNavItem icon={<Icon>home</Icon>}>Resume </SideNavItem>
+        <SideNavItem icon={<Icon>attachment</Icon>}>Resume </SideNavItem>
       </Link>
       <Link to='/ContactMe'>
         <SideNavItem icon={<Icon>mail</Icon>}>Contact Me </SideNavItem>

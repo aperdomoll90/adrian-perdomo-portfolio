@@ -5,7 +5,7 @@ import Sapphire from '../elements/sapphireFeature/sapphire'
 
 function ContactMe() {
   return (
-    <main className='main'>
+    <main >
       <section className='area1'>
         <div className='titleBox'>
           <div>
@@ -28,9 +28,9 @@ function ContactMe() {
           <p>Mind Sapphire</p>
           <Sapphire />
           <div className="featureLinks">
-              <a href="" target="_Blank">Demo</a>
-              <a href="" target="_Blank">Github</a>
-              <a href="" target="_Blank">API</a>
+              <a href="https://mindsapphire.com/" target="_Blank">Demo</a>
+              <a href="https://github.com/aperdomoll90/mindsapphire" target="_Blank">Github</a>
+              <a href="https://github.com/aperdomoll90/mindsapphire-api" target="_Blank">API</a>
           
           </div>
         </div>
@@ -52,7 +52,7 @@ function ContactMe() {
           </div>
         </div>
         <div className='area3-2dividers'>
-          <p className='titleBox-name'>Most used Technologies</p>
+          <p className='titleBox-name'>Most used Skills</p>
           <div className='area3-skillArea'>
             <div className='area3-skill area3-yellow'>React</div>
             <div className='area3-skill area3-blue'>React Native</div>

@@ -1,0 +1,123 @@
+@import './_variables.scss';
+
+.header {
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+h3 {
+  font-size: 1.5rem;
+  color: $font-test-light-color;
+  font-weight: $font-semibold;
+}
+h4 {
+  font-size: 1.5rem;
+  color: $font-test-color;
+  font-weight: $font-semibold;
+}
+
+.profileField {
+  height: 25%;
+  width: 40%;
+  position: absolute;
+  left: 32%;
+  top: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-profile {
+    height: 100%;
+    width: 34%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $font-test-color;
+    margin: 3%;
+    & img {
+      height: 97%;
+    }
+  }
+  & p {
+    font-size: 2.5rem;
+    color: $font-name-color;
+    font-weight: $font-bold;
+  }
+}
+.portfolio {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.vertical {
+  height: 148vh;
+  left: 50%;
+  border-radius: 50%;
+  border-left: 2px solid $font-test-color;
+  position: absolute;
+}
+
+.left {
+  width: 47%;
+  height: 150vh;
+  display: flex;
+  text-align: end;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.right {
+  width: 47%;
+  margin-top: -2%;
+  height: 150vh;
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.company {
+  color: $font-secondary-color;
+}
+.position {
+  color: $title-font-color;
+  font-weight: $font-semibold;
+}
+
+.resumeSkills {
+  width: 30vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  & p {
+    display: flex;
+    width: 7rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.contactMe {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  &-line {
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &-icon {
+    width: 2rem;
+    height: auto;
+    margin-right: 3%;
+  }
+}

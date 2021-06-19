@@ -121,10 +121,6 @@ function Sapphire() {
       <div className='canopy-circle'></div>
     </div>
   </section>
-  <div className='sign'>
-    <div className='sign-arrow'></div>
-    <div className='sign-half'></div>
-  </div>
   <div className="tent">
     <div className="tent-triangle"><div className="tent-frontWall"><div className="tent-door"></div></div></div>
   </div>
