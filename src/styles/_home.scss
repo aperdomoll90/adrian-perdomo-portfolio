@@ -84,7 +84,10 @@
     // color: $title-font-color;
     border-radius: 5px;
     text-align: center;
-    
+    & img {
+      height: 90%;
+      width: 90%;
+    }
     &-f2 {
       background-color: rgba(255, 255, 0, 0.383);
       box-shadow: 10px 15px 38px rgba(119, 119, 21, 0.582);

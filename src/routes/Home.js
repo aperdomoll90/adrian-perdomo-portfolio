@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/_main.scss'
 import portrait from '../elements/profile.png'
 import Sapphire from '../elements/sapphireFeature/sapphire'
+import affirmations from '../elements/affirma.png'
 
 function ContactMe() {
   return (
@@ -31,10 +32,17 @@ function ContactMe() {
               <a href="https://mindsapphire.com/" target="_Blank">Demo</a>
               <a href="https://github.com/aperdomoll90/mindsapphire" target="_Blank">Github</a>
               <a href="https://github.com/aperdomoll90/mindsapphire-api" target="_Blank">API</a>
-          
           </div>
         </div>
-        <div className='featureBox featureBox-f2'>Feature 2</div>
+        <div className='featureBox'>
+          <p>Sweet Affirmation</p>
+         <img src={affirmations} className=""/>
+          <div className="featureLinks">
+              <a href="https://afirmap-fc6fa.web.app/" target="_Blank">Demo</a>
+              <a href="https://github.com/aperdomoll90/AffirmationsApp" target="_Blank">Github</a>
+              <a href="https://github.com/aperdomoll90/Affirmations-api" target="_Blank">API</a>
+          </div>
+        </div>
         <div className='featureBox featureBox-f3'>Feature 3</div>
       </div>
 
