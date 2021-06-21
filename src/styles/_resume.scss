@@ -170,7 +170,6 @@ h4 {
 
 .hobbyArea {
     width:70%;
-    height: 25vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -178,7 +177,7 @@ h4 {
 }
 .imageOverlay{
   position: relative;
-  width: 9.5vh;
+  width: 25%;
   margin: 3%;
 
   &-img {
