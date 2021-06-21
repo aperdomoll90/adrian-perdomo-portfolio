@@ -21,9 +21,10 @@ function Header() {
       <Link to='/resume'>
         <SideNavItem icon={<Icon>attachment</Icon>}>Resume </SideNavItem>
       </Link>
-      {/* <Link to='/ContactMe'>
-        <SideNavItem icon={<Icon>mail</Icon>}>Contact Me </SideNavItem>
-      </Link> */}
+      <Link href="https://firebasestorage.googleapis.com/v0/b/bocacode-fb.appspot.com/o/candidates%2Fresumes%2Fperdomo_resume_2021.pdf?alt=media"  >
+        <SideNavItem icon={<Icon>attach_file</Icon>}>Download Resume</SideNavItem>
+      </Link>
+  
     </SideNav>
   )
 }

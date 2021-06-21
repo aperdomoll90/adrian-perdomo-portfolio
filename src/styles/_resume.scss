@@ -177,11 +177,11 @@ h4 {
 }
 .imageOverlay{
   position: relative;
-  width: 25%;
-  margin: 3%;
+  width: 19%;
+  margin: 2%;
 
   &-img {
-    width: inherit;
+    width: 100%;
     display: block;
   }
   &-overlay {
@@ -222,5 +222,9 @@ h4 {
     & img {
         width: 5.6vh;
         height: auto;
-    }}
+    }
+    .imageOverlay{
+      width: 25%;
+      margin: 3%;}
+  }
 }
