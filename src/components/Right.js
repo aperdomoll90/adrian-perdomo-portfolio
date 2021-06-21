@@ -11,7 +11,6 @@ import baking from '../elements/baking.png'
 import painting from '../elements/painting.png'
 import traveling from '../elements/traveling.png'
 
-
 function Right() {
   return (
     <div className='right'>
@@ -43,8 +42,8 @@ function Right() {
         <br />
       </div>
       <div>
-      <h4>SKILLS</h4>
-        <div className="resumeSkills">
+        <h4>SKILLS</h4>
+        <div className='resumeSkills'>
           <p className='position'>React</p>
           <p className='position'>JavaScrip</p>
           <p className='position'>HTML</p>
@@ -59,29 +58,79 @@ function Right() {
           <p className='position'>Electron</p>
         </div>
       </div>
-      <br/>
+      <br />
       <div>
-      <h4>CONTACT INFO</h4>
-        <ul className="contactMe">
-              <li className="contactMe-line" ><img className="contactMe-icon" src={phone} alt="phone icon"/>(305) 343-9033</li>
-              <li className="contactMe-line" ><img className="contactMe-icon" src={mail} alt="mail icon"/>adrianperdomollerena@gmail.com</li>
-              <li className="contactMe-line" ><img className="contactMe-icon" src={github} alt="linkedin icon"/><a href="https://github.com/aperdomoll90" target="_Blank">https://github.com/aperdomoll90</a></li>
-              <li className="contactMe-line" ><img className="contactMe-icon" src={linkedin} alt="linkedin icon"/><a href="https://www.linkedin.com/in/adrian-perdomo-12997474/" target="_Blank">https://www.linkedin.com/in/adrian-perdomo-12997474/</a></li>
-            </ul>
+        <h4>CONTACT INFO</h4>
+        <ul className='contactMe'>
+          <li className='contactMe-line'>
+            <img className='contactMe-icon' src={phone} alt='phone icon' />
+            (305) 343-9033
+          </li>
+          <li className='contactMe-line'>
+            <img className='contactMe-icon' src={mail} alt='mail icon' />
+            adrianperdomollerena@gmail.com
+          </li>
+          <li className='contactMe-line'>
+            <img className='contactMe-icon' src={github} alt='linkedin icon' />
+            <a href='https://github.com/aperdomoll90' target='_Blank'>
+              https://github.com/aperdomoll90
+            </a>
+          </li>
+          <li className='contactMe-line'>
+            <img className='contactMe-icon' src={linkedin} alt='linkedin icon' />
+            <a href='https://www.linkedin.com/in/adrian-perdomo-12997474/' target='_Blank'>
+              https://www.linkedin.com/in/adrian-perdomo-12997474/
+            </a>
+          </li>
+        </ul>
       </div>
-      <br/>
+      <br />
       <div>
-      <h4>HOBBIES</h4>
-      <div className="hobbyArea">
-       <img src={gym}/>
-       <img src={cooking}/>
-       <img src={gardening}/>
-       <img src={karaoke}/>
-       <img src={baking}/>
-       <img src={painting}/>
-       <img src={traveling}/>
-
-       </div>
+        <h4>HOBBIES</h4>
+        <div className='hobbyArea'>
+          <div className='imageOverlay'>
+            <img className='imageOverlay-img' alt='Icon of a dumbbell' src={gym} />
+            <div className='imageOverlay-overlay'>
+              <div className='imageOverlay-title'>GYM </div>
+            </div>
+          </div>
+          <div className='imageOverlay'>
+            <img className='imageOverlay-img' alt='Icon of cooking tools' src={cooking} />
+            <div className='imageOverlay-overlay'>
+              <div className='imageOverlay-title'>Cooking </div>
+            </div>
+          </div>
+          <div className='imageOverlay'>
+            <img className='imageOverlay-img' alt='icon of gardening tools' src={gardening} />
+            <div className='imageOverlay-overlay'>
+              <div className='imageOverlay-title'>Gardening </div>
+            </div>
+          </div>
+          <div className='imageOverlay'>
+            <img className='imageOverlay-img' alt='icon of karaoke microphone' src={karaoke} />
+            <div className='imageOverlay-overlay'>
+              <div className='imageOverlay-title'>Karaoke </div>
+            </div>
+          </div>
+          <div className='imageOverlay'>
+            <img className='imageOverlay-img' alt='icon of baking tools' src={baking} />
+            <div className='imageOverlay-overlay'>
+              <div className='imageOverlay-title'>Baking </div>
+            </div>
+          </div>
+          <div className='imageOverlay'>
+            <img className='imageOverlay-img' alt='icon of a painting brush' src={painting} />
+            <div className='imageOverlay-overlay'>
+              <div className='imageOverlay-title'>Painting </div>
+            </div>
+          </div>
+          <div className='imageOverlay'>
+            <img className='imageOverlay-img' alt='Icon of a plane flying' src={traveling} />
+            <div className='imageOverlay-overlay'>
+              <div className='imageOverlay-title'>Traveling </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )

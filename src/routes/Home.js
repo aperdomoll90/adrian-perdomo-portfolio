@@ -41,7 +41,7 @@ function ContactMe() {
           </div>
         </div>
         <div className='featureBox'>
-          <p>Sweet Affirmation</p>
+          <p>Sweet Affirmations</p>
          <img src={affirmations} className=""/>
           <div className="featureLinks">
               <a href="https://afirmap-fc6fa.web.app/" target="_Blank">Demo</a>
