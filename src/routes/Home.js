@@ -8,7 +8,7 @@ import github from '../elements/github.png'
 
 function ContactMe() {
   return (
-    <main >
+    <main>
       <section className='area1'>
         <div className='titleBox'>
           <div>
@@ -22,9 +22,24 @@ function ContactMe() {
             </p>
           </div>
         </div>
-        <div className="personalLinks">
-         <a href="https://www.linkedin.com/in/adrian-perdomo-12997474/" target="_Blank"><img src={linkedin}  className="btn btn-floating btn-large waves-effect waves-light "/></a> 
-         <a href="https://github.com/aperdomoll90" target="_Blank"> <img src={github}className="btn btn-floating btn-large waves-effect waves-light "/></a> 
+        <div className='personalLinks'>
+          <a href='https://www.linkedin.com/in/adrian-perdomo-12997474/' target='_Blank'>
+            <div className='navBarIcon'>
+              <img src={linkedin} className='navBarIcon-img' />
+              <div className='navBarIcon-overlay personalLinks-overlay'>
+                <div className='navBarIcon-title'>LinkedIn </div>
+              </div>
+            </div>
+          </a>
+
+          <a href='https://github.com/aperdomoll90' target='_Blank'>
+            <div className='navBarIcon'>
+              <img src={github} className='navBarIcon-img' />
+              <div className='navBarIcon-overlay personalLinks-overlay'>
+                <div className='navBarIcon-title'>Github </div>
+              </div>
+            </div>
+          </a>
         </div>
 
         <img src={portrait} id='portrait' />
@@ -34,19 +49,31 @@ function ContactMe() {
         <div className='featureBox'>
           <p>Mind Sapphire</p>
           <Sapphire />
-          <div className="featureLinks">
-              <a href="https://mindsapphire.com/" target="_Blank">Demo</a>
-              <a href="https://github.com/aperdomoll90/mindsapphire" target="_Blank">Github</a>
-              <a href="https://github.com/aperdomoll90/mindsapphire-api" target="_Blank">API</a>
+          <div className='featureLinks'>
+            <a href='https://mindsapphire.com/' target='_Blank'>
+              Demo
+            </a>
+            <a href='https://github.com/aperdomoll90/mindsapphire' target='_Blank'>
+              Github
+            </a>
+            <a href='https://github.com/aperdomoll90/mindsapphire-api' target='_Blank'>
+              API
+            </a>
           </div>
         </div>
         <div className='featureBox'>
           <p>Sweet Affirmations</p>
-         <img src={affirmations} className=""/>
-          <div className="featureLinks">
-              <a href="https://afirmap-fc6fa.web.app/" target="_Blank">Demo</a>
-              <a href="https://github.com/aperdomoll90/AffirmationsApp" target="_Blank">Github</a>
-              <a href="https://github.com/aperdomoll90/Affirmations-api" target="_Blank">API</a>
+          <img src={affirmations} className='' />
+          <div className='featureLinks'>
+            <a href='https://afirmap-fc6fa.web.app/' target='_Blank'>
+              Demo
+            </a>
+            <a href='https://github.com/aperdomoll90/AffirmationsApp' target='_Blank'>
+              Github
+            </a>
+            <a href='https://github.com/aperdomoll90/Affirmations-api' target='_Blank'>
+              API
+            </a>
           </div>
         </div>
         <div className='featureBox featureBox-f3'>Feature 3</div>

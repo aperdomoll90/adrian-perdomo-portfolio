@@ -6,26 +6,33 @@ import { Link } from 'react-router-dom'
 
 function Header() {
   return (
-    <SideNav
-      id='SideNav-10'
-      options={{ draggable: false }}
-      trigger={
-        <Button className='btn-floating btn-large waves-effect waves-light nav-button' node='button'>
-          <i className='material-icons'>view_headline</i>
-        </Button>
-      }>
-      <SideNavItem user={{ email: 'Welcome' }} userView />
+    <div className="navBar">
       <Link to='/'>
-        <SideNavItem icon={<Icon>home</Icon>}>Home</SideNavItem>
+        <div className='navBarIcon'>
+          <i className='material-icons navBarIcon-img'>home</i>
+          <div className='navBarIcon-overlay'>
+            <div className='navBarIcon-title personalLinks-title'>Home </div>
+          </div>
+        </div>
       </Link>
       <Link to='/resume'>
-        <SideNavItem icon={<Icon>attachment</Icon>}>Resume </SideNavItem>
+        <div className='navBarIcon'>
+          <i className='material-icons navBarIcon-img'>business_center</i>
+          <div className='navBarIcon-overlay'>
+            <div className='navBarIcon-title personalLinks-title'>Resume</div>
+          </div>
+        </div>
       </Link>
-      <Link href="https://firebasestorage.googleapis.com/v0/b/bocacode-fb.appspot.com/o/candidates%2Fresumes%2Fperdomo_resume_2021.pdf?alt=media"  >
-        <SideNavItem icon={<Icon>attach_file</Icon>}>Download Resume</SideNavItem>
-      </Link>
-  
-    </SideNav>
+      <a href='https://firebasestorage.googleapis.com/v0/b/bocacode-fb.appspot.com/o/candidates%2Fresumes%2Fperdomo_resume_2021.pdf?alt=media' target='_Blank'>
+        <div className='navBarIcon'>
+          <i className='material-icons navBarIcon-img'>attach_file</i>
+          <div className='navBarIcon-overlay'>
+            <div className='navBarIcon-title personalLinks-title'>Download<br/>Resume </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
   )
 }
 
