@@ -7,6 +7,13 @@
   align-items: flex-end;
   justify-content: center;
 }
+.downloadButton{
+  margin: 2%;
+  position: absolute;
+  top: 0%;
+  right: 50%;
+  background-color: $button-orange-color;
+}
 h3 {
   font-size: 1.5rem;
   color: $font-test-light-color;
