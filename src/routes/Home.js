@@ -3,6 +3,7 @@ import '../styles/_main.scss'
 import portrait from '../elements/profile.png'
 import Sapphire from '../elements/sapphireFeature/sapphire'
 import affirmations from '../elements/affirma.png'
+import burger from '../elements/burger.png'
 import linkedin from '../elements/linkedin.png'
 import github from '../elements/github.png'
 
@@ -47,7 +48,7 @@ function ContactMe() {
 
       <div className='Stripe'>
         <div className='featureBox'>
-          <p>Mind Sapphire</p>
+          <p className="featureBox-title">Mind Sapphire</p>
           <Sapphire />
           <div className='featureLinks'>
             <a href='https://mindsapphire.com/' target='_Blank'>
@@ -62,8 +63,8 @@ function ContactMe() {
           </div>
         </div>
         <div className='featureBox'>
-          <p>Sweet Affirmations</p>
-          <img src={affirmations} className='' />
+          <p className="featureBox-title">Sweet Affirmations</p>
+          <img src={affirmations}  />
           <div className='featureLinks'>
             <a href='https://afirmap-fc6fa.web.app/' target='_Blank'>
               Demo
@@ -76,7 +77,21 @@ function ContactMe() {
             </a>
           </div>
         </div>
-        <div className='featureBox featureBox-f3'>Feature 3</div>
+        <div className='featureBox'>
+          <p className="featureBox-title">Nikki's Restaurants</p>
+          <img src={burger} className='burger' />
+          <div className='featureLinks'>
+            <a href='https://nikkis-restaurant-app.web.app/' target='_Blank'>
+              Demo
+            </a>
+            <a href='https://github.com/aperdomoll90/restaurantes-by-nikki' target='_Blank'>
+              Github
+            </a>
+            <a href='https://github.com/aperdomoll90/restaurantes-by-nikki' target='_Blank'>
+              API
+            </a>
+          </div>
+      </div>
       </div>
 
       <section className='area3'>

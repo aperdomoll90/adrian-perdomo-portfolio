@@ -87,18 +87,12 @@
     border-radius: 5px;
     text-align: center;
     & img {
-      height: 90%;
+      height: 70%;
       width: 90%;
     }
-    &-f2 {
-      background-color: rgba(255, 255, 0, 0.383);
-      box-shadow: 10px 15px 38px rgba(119, 119, 21, 0.582);
-    }
-    &-f3 {
-      background-color: rgba(255, 0, 0, 0.383);
-      box-shadow: 10px 15px 38px rgba(165, 25, 25, 0.829);
-    }
+  
   }
+  
   .featureLinks{
     width: 100%;
     display: flex;
