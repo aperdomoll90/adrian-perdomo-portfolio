@@ -79,7 +79,7 @@ function ContactMe() {
         </div>
         <div className='featureBox'>
           <p className="featureBox-title">Nikki's Restaurants</p>
-          <img src={burger} className='burger' />
+          <img src={burger} className='featureBox-burger' />
           <div className='featureLinks'>
             <a href='https://nikkis-restaurant-app.web.app/' target='_Blank'>
               Demo

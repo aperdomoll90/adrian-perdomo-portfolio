@@ -83,13 +83,24 @@
     transform: skewY(6deg);
     width: 20%;
     height: 75%;
-    // color: $title-font-color;
+  
     border-radius: 5px;
     text-align: center;
     & img {
       height: 70%;
       width: 90%;
+      margin-top: 6%;
+      margin-bottom: 6%;
     }
+    &-burger{
+      height: 50% !important;
+    }
+    &-title{
+      font-size: 1.5rem;
+      font-weight: $font-bold;
+      color: $title-font-color;
+    }
+    
   
   }
   
@@ -101,9 +112,12 @@
       font-size: 3rem;
       color: chartreuse;
     }
+    & a{
+      color: $title-font-color;
+    }
     & a:hover{
-      color: chartreuse;
-      font-size: 1.2rem;
+      color: $button-orange-color;
+      font-size: 1.1rem;
     }
   }
   @media only screen and (max-width: 1025px) {
