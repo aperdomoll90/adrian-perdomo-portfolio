@@ -18,7 +18,7 @@ function NavBar() {
             </div>
           </Link>
 
-          <Link to='/resume' className='linkPosition'>
+          <Link to='/resume' target='_Blank' className='linkPosition'>
             <div className='linksBullet'>
               <h2>
                 Resume

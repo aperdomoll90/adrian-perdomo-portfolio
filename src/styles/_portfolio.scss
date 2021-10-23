@@ -73,20 +73,6 @@
   font-family: 'Roboto', sans-serif;
   text-shadow: 0px 2px 5px ($metal);
 }
-@media only screen and (max-width: 1025px) {
-  .regularLink {
-    font-size: 0.8em;
-  }
-  .featureBox {
-    min-width: 45%;
-    height: 25%;
-    margin: 2%;
-
-    &-title {
-      font-size: 1rem;
-    }
-  }
-}
 
 @media only screen and (max-width: 1625px) {
   .regularLink {
@@ -101,4 +87,32 @@
     }
   }
 }
+
+@media only screen and (max-width: 1025px) {
+  .regularLink {
+    font-size: 0.7em;
+    color:yellow;
+
+  }
+  .featureBox {
+    min-width: 45%;
+    height: 40%;
+    margin: 2%;
+
+    &-title {
+      font-size: 1rem;
+    }
+  }
+}
+
+
+
+// @media only screen and (max-width: 922px) {
+
+//   .content {
+//     &-school ul li {
+//       font-size: 0.6rem;
+//     }
+//   }
+// }
 

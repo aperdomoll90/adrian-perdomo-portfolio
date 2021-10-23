@@ -3,7 +3,6 @@ import './styles/_main.scss'
 import 'materialize-css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Landing from './routes/Landing'
-import ContactMe from './routes/ContactMe'
 import Resume from './routes/Resume'
 import NavBar from './components/NavBar';
 
@@ -44,7 +43,6 @@ function App() {
     <NavBar/>
       <Switch>
         <Route path="/resume" component={Resume} />
-        <Route path="/ContactMe" component={ContactMe} />
         <Route path="/" component={Landing} />
       </Switch>
     </Router>

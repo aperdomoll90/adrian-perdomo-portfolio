@@ -111,7 +111,7 @@
     }
   }
 
-
+ 
 
   @media only screen and (max-width: 1025px) {
     .laptop {
@@ -166,7 +166,7 @@
   min-height: 500px;
   position: absolute;
   left: 0;
-  bottom: -1%;
+  bottom: -2%;
   z-index: 20;
   background: linear-gradient(to bottom, transparent, $metal);
 }
@@ -184,7 +184,7 @@
 }
 
 #rightColumn {
-  background-image: url(../elements/test/Table.jpg);
+  background-image: url(../elements/Table.jpg);
   height: 68vh;
   width: 50%;
   border-radius: 10px;

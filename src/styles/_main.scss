@@ -7,9 +7,11 @@
 }
 @import 'materialize-css/dist/css/materialize.min.css';
 @import './_variables.scss';
-@import '../styles/_home.scss';
 @import '../styles/_resume.scss';
-@import '../styles/_contact.scss';
+@import '../styles/_landing.scss';
+@import '../styles/_navBar.scss';
+@import '../styles/_animatedLink.scss';
+
 
 // @media only screen and (max-width: 1025px) {
 //   .main {
