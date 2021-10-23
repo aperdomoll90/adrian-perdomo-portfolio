@@ -8,7 +8,7 @@ function NavBar() {
     <div id='backGroundGradient'>
     <div className='nav'>
           <Link to='/' className='linkPosition'>
-            <div className='links'>
+            <div className='linksBullet'>
               <h2>
                 Portfolio
                 <span> Portfolio</span>
@@ -19,7 +19,7 @@ function NavBar() {
           </Link>
 
           <Link to='/resume' className='linkPosition'>
-            <div className='links'>
+            <div className='linksBullet'>
               <h2>
                 Resume
                 <span> Resume</span>
@@ -30,7 +30,7 @@ function NavBar() {
           </Link>
 
           <a className='linkPosition' href='https://firebasestorage.googleapis.com/v0/b/bocacode-fb.appspot.com/o/candidates%2Fresumes%2Fperdomo_resume_2021.pdf?alt=media' rel='noreferrer' target='_Blank'>
-            <div className='links'>
+            <div className='linksBullet'>
               <h2>
                 Download
                 <span> Download</span>

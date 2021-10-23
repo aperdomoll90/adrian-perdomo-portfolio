@@ -14,12 +14,13 @@
   width: 45%;
   height: 100%;
   display: flex;
+  position: relative;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.links {
+.linksBullet {
   position: relative;
 }
 
@@ -47,7 +48,7 @@ h2 span:nth-child(1) {
 }
 h2:hover span:nth-child(1) {
   color: $white;
-  transform: translateX(-18px);
+  transform: translateX(-5px);
 }
 
 h2 span:nth-child(2) {
@@ -61,7 +62,21 @@ h2 span:nth-child(2) {
 }
 h2:hover span:nth-child(2) {
   color: $white;
-  transform: translateX(18px);
+  transform: translateX(5px);
+}
+
+@media only screen and (max-width: 1625px) {
+  h2 {
+    font-size: 1em;
+
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  h2 {
+    font-size: 0.8em;
+
+  }
 }
 
 // h2 span:nth-child(3) {

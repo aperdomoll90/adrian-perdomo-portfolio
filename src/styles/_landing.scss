@@ -80,6 +80,71 @@
   }
 }
 
+.personalLinks{
+    width: 5%;
+    height: 20%;
+    position: absolute;
+    bottom: 200%;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 31;
+
+    & img {
+      width: 3vw !important;
+      display: block;
+    }
+    &-overlay {
+      width: 3vw;
+      height: 3vw;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.25s;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 1025px) {
+    .laptop {
+        bottom: 0px;
+      }
+    .personalLinks{
+        top: 75%;
+        right: 3%;
+      }
+      .titleBox {
+       top:60%;
+       left: 45%;
+       width: 50%;
+      }
+  }
+  @media only screen and (max-width: 800px) {
+    .titleBox {
+        top: 45%;
+        height: 30%;
+     &-bold{
+         font-size: 2.4rem;
+     }
+    }
+}
+ 
+
+  @media only screen and (max-height: 734px) {
+    .profile {
+        height: 90%;
+        width: auto;
+      }
+  }
+
 // #firstImage{
 //     background-image: url(../elements/test/laptop.png);
 // }
@@ -122,6 +187,7 @@
   background-image: url(../elements/test/Table.jpg);
   height: 68vh;
   width: 50%;
+  border-radius: 10px;
   position: relative;
   overflow: hidden;
   background-attachment: fixed;

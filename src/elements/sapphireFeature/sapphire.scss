@@ -5,26 +5,25 @@
   
   .animationField {
     position: relative;
-    // top: 5%;
-    left: -15%;
-    height: 80%;
-    width: 160%;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
   }
-  @media only screen and (max-width: 1025px) {
-    .animationField {
-      position: relative;
-      // top: 5%;
-      left: 15%;
-      height: 100%;
-      width: 65%;
-    }
-  }
+  // @media only screen and (max-width: 1025px) {
+  //   .animationField {
+  //     position: relative;
+  //     height: 100%;
+  //     width: 100%;
+  //   }
+  // }
   
   //************* astral Field
   .astralField {
     height: 95%;
-    width: 85%;
+    width: 90%;
     transform: rotate(-25deg);
     position: absolute;
     left: 6%;
@@ -84,11 +83,9 @@
   
   //************* Base
   .FloatingBase {
-    height: 70%;
-    width: 40%;
-    position: absolute;
-    top: 10%;
-    left: 25%;
+    position: relative;
+    height: 65%;
+    width: 60%;
     animation: baseFloat 15s infinite ease-in-out alternate;
   
     &-field {
@@ -177,12 +174,11 @@
     }
   }
   
-  @media only screen and (max-width: 1025px) {
+  @media only screen and (max-width: 992px) {
     .FloatingBase {
-      height: 55%;
-      width: 100%;
-      top: 25%;
-      left: 0%;
+      height: 60%;
+      width: 80%;
+     
     }
   }
   @keyframes baseFloat {

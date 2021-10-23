@@ -1,13 +1,104 @@
 @import './_variables.scss';
 
-.portfolioMainContainer{
-background-image: url(../elements/test/Table.jpg);
-  height: 49vh;
-  width: 50%;
-  position: relative;
-  overflow: hidden;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#portfolioMainContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-y: scroll;
 }
+
+.video{
+  width: 100%;
+  height: 70%;
+}
+
+.featureBox {
+  width: 31%;
+  height: 49%;
+  position: relative;
+  border-radius: 10px;
+  border-color: $white;
+  border-width: 2px;
+  border-style: solid;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.26);
+  margin: 1%;
+
+  & img {
+    height: 65%;
+    width: 90%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+  }
+  &-burger {
+    height: 50% !important;
+  }
+  &-title {
+    font-size: 1.5rem;
+    font-weight: $font-bold;
+    color: $magic-mint;
+    position: absolute;
+    top: 0;
+    text-shadow: 0px 2px 5px #000000;
+  }
+}
+
+.featureLinks {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: $transparent-metal;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.regularLink {
+  font-size: 1em;
+  font-weight: 900;
+  color: $magic-mint;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 0px 2px 5px ($metal);
+}
+@media only screen and (max-width: 1025px) {
+  .regularLink {
+    font-size: 0.8em;
+  }
+  .featureBox {
+    min-width: 45%;
+    height: 25%;
+    margin: 2%;
+
+    &-title {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1625px) {
+  .regularLink {
+    font-size: 0.8em;
+  }
+  .featureBox {
+    width: 31%;
+    height: 49%;
+
+    &-title {
+      font-size: 1rem;
+    }
+  }
+}
+

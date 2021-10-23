@@ -54,59 +54,7 @@
     justify-content: space-around;
     align-items: center;
   }
-  .featureBox {
-    transform: skewY(6deg);
-    width: 20%;
-    height: 75%;
   
-    border-radius: 5px;
-    text-align: center;
-    & img {
-      height: 70%;
-      width: 90%;
-      margin-top: 6%;
-      margin-bottom: 6%;
-    }
-    &-burger{
-      height: 50% !important;
-    }
-    &-title{
-      font-size: 1.5rem;
-      font-weight: $font-bold;
-      color: $title-font-color;
-    }
-    
-  
-  }
-  
-  .featureLinks{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    & p{
-      font-size: 3rem;
-      color: chartreuse;
-    }
-    & a{
-      color: $title-font-color;
-    }
-    & a:hover{
-      color: $button-orange-color;
-      font-size: 1.1rem;
-    }
-  }
-  @media only screen and (max-width: 1025px) {
-    .Stripe {
-      overflow: scroll;
-      flex-direction: column;
-      padding: 2%;
-    }
-    .featureBox {
-     width: 90vw;
-     height: 75wh;
-     margin: 5%;
-    }
-  }
   
   // **************** Area 3
   

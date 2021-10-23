@@ -3,28 +3,10 @@ import '../styles/_overview.scss'
 import 'materialize-css'
 
 function Overview() {
-  window.addEventListener('scroll', () => {
-    const section = document.querySelector('section')
-    const section_height = document.querySelector('section').offsetHeight
-    let sectionY = section.getBoundingClientRect()
-
-    console.log('sectionY', sectionY.top)
-
-    document.querySelector(".content").style.transform = `translateY(${(window.pageYOffset / (section_height + sectionY.top)) * 75 - 60}px)`
-    document.querySelector(".content").style.opacity = - window.pageYOffset / (document.querySelector(".overviewMainContainer").offsetHeight /2)+4.6;
-    document.querySelector(".skillsColumn").style.transform = `translateY(${(window.pageYOffset / (section_height + sectionY.top)) * -75 + 60}px)`
-    document.querySelector(".skillsColumn").style.opacity = - window.pageYOffset / (document.querySelector(".overviewMainContainer").offsetHeight /2)+ 4.6;
-
-
-    document.querySelector(".overviewMainContainer ").style.height = `${window.pageYOffset * - 0.5 - 50}px`;
-    document.querySelector(".verticalDivider ").style.height = `${window.pageYOffset * 0.3 + 200}px`;
-    document.querySelector(".leftDivider").style.width = `${window.pageYOffset * 0.2 + 50}px`;
-    document.querySelector(".rightDivider").style.width = `${window.pageYOffset * 0.2 + 50}px`;
-  })
 
   return (
     <section className='overviewMainContainer'>
-      <div className='overviewMainContainer-column content'>
+      <div className='overviewMainContainer-column content' data-speed="0.45">
         <div className='titleBox-name titlePosition'>Education</div>
         <div className='divider leftDivider' />
         <div className='content-school'>
@@ -38,7 +20,7 @@ function Overview() {
         </div>
       </div>
       <div className='verticalDivider' />
-      <div className='overviewMainContainer-column skillsColumn'>
+      <div className='overviewMainContainer-column skillsColumn' data-speed="0.45">
         <p className='titleBox-name titlePosition'>Most used Skills</p>
         <div className='divider rightDivider ' />
         <div className='skillsColumn-skillArea'>
