@@ -1,18 +1,18 @@
 @import './_variables.scss';
 
-.titlePosition{
+.titlePosition {
   position: absolute;
-  top:0px;
+  top: 0px;
   left: 0px;
 }
 .divider {
-width: 40%;
-height: 3px;
-border-radius: 5px;
-background-color: $white;
-position: absolute;
-top:40px;
-left: 0px;
+  width: 40%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: $white;
+  position: absolute;
+  top: 40px;
+  left: 0px;
 }
 
 .verticalDivider {
@@ -23,7 +23,13 @@ left: 0px;
   // position: absolute;
   // top:40px;
   // left: 0px;
-  }
+}
+.content {
+  transform: translateY(-40px);
+}
+.skillsColumn {
+  transform: translateX(50px);
+}
 
 .area3 {
   width: 100%;
@@ -34,11 +40,9 @@ left: 0px;
   justify-content: space-around;
   align-items: center;
 
-  &-school ul li{
-font-size: 1.2rem;
-color:$magic-mint;
-
-
+  &-school ul li {
+    font-size: 1.2rem;
+    color: $magic-mint;
   }
 
   &-2dividers {

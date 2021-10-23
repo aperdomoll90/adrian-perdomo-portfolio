@@ -1,30 +1,34 @@
 import React from 'react'
-
-import NavBar from '../components/NavBar'
 import '../styles/_landing.scss'
 import Laptop from '../elements/test/laptop.png'
 import Profile from '../elements/test/profile.png'
 import Cellphone from '../elements/test/cellphone.png'
 import Overview from '../components/Overview'
 
-const translate =document.querySelectorAll(".translate");
-window.addEventListener('scroll', ()=>{
-let scroll = window.pageYOffset;
-translate.forEach(element => {
-let speed = element.dataset.speed;
-element.style.transform = `translateY(${scroll * speed}px)`;
-})
-})
- 
+
+
 function Landing() {
+  
+  window.addEventListener('scroll', ()=>{
+    document.querySelectorAll(".translate").forEach(element => {
+    element.style.transform = `translateY(${window.pageYOffset * element.dataset.speed}px)`;
+    })
+    document.querySelector(".titleBox").style.opacity = - window.pageYOffset / (document.querySelector(".parallaxBackground").offsetHeight /2)+1.5;
+    // document.querySelector(".profile").style.opacity = - window.pageYOffset / (document.querySelector(".parallaxBackground").offsetHeight /2)+1.6;
+    document.querySelector(".cellphone").style.opacity = - window.pageYOffset / (document.querySelector(".parallaxBackground").offsetHeight /2)+1;
+    document.querySelector(".shadow").style.height = `${window.pageYOffset * 0.5 + 500}px`;
+
+    })
+
+  
   return (
     <main>
       <div id='firstImage' className='parallaxBackground'>
-        <img src={Laptop} className='laptop translate' data-speed="0.25" alt='laptop'/>
+        <img src={Laptop} className='laptop translate' data-speed="0.45" alt='laptop'/>
         <img src={Profile} className='profile translate'data-speed="0.4" alt='profile'/>
         <img src={Cellphone} className='cellphone translate' data-speed="-0.8" alt='cellphone'/>
-       <NavBar className='translate' data-speed="-0.30"/>
-       <div className='titleBox'>
+       
+       <div className='titleBox translate' data-speed="0.1">
           <div>
             <p className='titleBox-name'>
               Hello, I’m <span>Adrian Perdomo</span>
