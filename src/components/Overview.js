@@ -10,24 +10,24 @@ function Overview() {
 
     console.log('sectionY', sectionY.top)
 
-    document.querySelector(".content").style.transform = `translateY(${(window.pageYOffset / (section_height + sectionY.top)) * 50 - 20}px)`
-    document.querySelector(".content").style.opacity = - window.pageYOffset / (document.querySelector(".area3").offsetHeight /2)+4.6;
-    document.querySelector(".skillsColumn").style.transform = `translateX(${(window.pageYOffset / (section_height + sectionY.top)) * -50 + 20}px)`
-    document.querySelector(".skillsColumn").style.opacity = - window.pageYOffset / (document.querySelector(".area3").offsetHeight /2)+ 4.6;
+    document.querySelector(".content").style.transform = `translateY(${(window.pageYOffset / (section_height + sectionY.top)) * 75 - 60}px)`
+    document.querySelector(".content").style.opacity = - window.pageYOffset / (document.querySelector(".overviewMainContainer").offsetHeight /2)+4.6;
+    document.querySelector(".skillsColumn").style.transform = `translateY(${(window.pageYOffset / (section_height + sectionY.top)) * -75 + 60}px)`
+    document.querySelector(".skillsColumn").style.opacity = - window.pageYOffset / (document.querySelector(".overviewMainContainer").offsetHeight /2)+ 4.6;
 
 
-
-    document.querySelector(".verticalDivider ").style.height = `${window.pageYOffset * 0.3 + 50}px`;
+    document.querySelector(".overviewMainContainer ").style.height = `${window.pageYOffset * - 0.5 - 50}px`;
+    document.querySelector(".verticalDivider ").style.height = `${window.pageYOffset * 0.3 + 200}px`;
     document.querySelector(".leftDivider").style.width = `${window.pageYOffset * 0.2 + 50}px`;
     document.querySelector(".rightDivider").style.width = `${window.pageYOffset * 0.2 + 50}px`;
   })
 
   return (
-    <section className='area3'>
-      <div className='area3-2dividers content'>
+    <section className='overviewMainContainer'>
+      <div className='overviewMainContainer-column content'>
         <div className='titleBox-name titlePosition'>Education</div>
         <div className='divider leftDivider' />
-        <div className='area3-school'>
+        <div className='content-school'>
           <ul>
             <li>04/2020 - 06/2020 Software Engineering Career Course Boca Code </li>
             <li>Associate in Arts Degree (Marketing) Palm Beach State College</li>
@@ -38,22 +38,22 @@ function Overview() {
         </div>
       </div>
       <div className='verticalDivider' />
-      <div className='area3-2dividers skillsColumn'>
+      <div className='overviewMainContainer-column skillsColumn'>
         <p className='titleBox-name titlePosition'>Most used Skills</p>
         <div className='divider rightDivider ' />
-        <div className='area3-skillArea'>
-          <div className='area3-skill area3-yellow'>React</div>
-          <div className='area3-skill area3-blue'>React Native</div>
-          <div className='area3-skill area3-orange'>Electron</div>
-          <div className='area3-skill area3-purple'>TypeScript</div>
-          <div className='area3-skill area3-yellow'>SQL / NoSQL</div>
-          <div className='area3-skill area3-red'>HTML</div>
-          <div className='area3-skill area3-blue'>CSS</div>
-          <div className='area3-skill area3-yellow'>SASS</div>
-          <div className='area3-skill area3-green'>Node</div>
-          <div className='area3-skill area3-purple'>Express</div>
-          <div className='area3-skill area3-green'>Styled Components</div>
-          <div className='area3-skill area3-purple'>Firebase</div>
+        <div className='skillsColumn-skillArea'>
+          <div className='skillsColumn-skill skillsColumn-yellow'>React</div>
+          <div className='skillsColumn-skill skillsColumn-blue'>React Native</div>
+          <div className='skillsColumn-skill skillsColumn-orange'>Electron</div>
+          <div className='skillsColumn-skill skillsColumn-purple'>TypeScript</div>
+          <div className='skillsColumn-skill skillsColumn-yellow'>SQL / NoSQL</div>
+          <div className='skillsColumn-skill skillsColumn-red'>HTML</div>
+          <div className='skillsColumn-skill skillsColumn-blue'>CSS</div>
+          <div className='skillsColumn-skill skillsColumn-yellow'>SASS</div>
+          <div className='skillsColumn-skill skillsColumn-green'>Node</div>
+          <div className='skillsColumn-skill skillsColumn-purple'>Express</div>
+          <div className='skillsColumn-skill skillsColumn-green'>Styled Components</div>
+          <div className='skillsColumn-skill skillsColumn-purple'>Firebase</div>
         </div>
       </div>
     </section>

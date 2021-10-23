@@ -4,6 +4,7 @@ import Laptop from '../elements/test/laptop.png'
 import Profile from '../elements/test/profile.png'
 import Cellphone from '../elements/test/cellphone.png'
 import Overview from '../components/Overview'
+import Portfolio from '../components/Portfolio'
 
 
 
@@ -13,9 +14,9 @@ function Landing() {
     document.querySelectorAll(".translate").forEach(element => {
     element.style.transform = `translateY(${window.pageYOffset * element.dataset.speed}px)`;
     })
-    document.querySelector(".titleBox").style.opacity = - window.pageYOffset / (document.querySelector(".parallaxBackground").offsetHeight /2)+1.5;
-    // document.querySelector(".profile").style.opacity = - window.pageYOffset / (document.querySelector(".parallaxBackground").offsetHeight /2)+1.6;
-    document.querySelector(".cellphone").style.opacity = - window.pageYOffset / (document.querySelector(".parallaxBackground").offsetHeight /2)+1;
+    document.querySelector(".titleBox").style.opacity = - window.pageYOffset / (document.querySelector(".firstContainer").offsetHeight /2)+1.5;
+    // document.querySelector(".profile").style.opacity = - window.pageYOffset / (document.querySelector(".firstContainer").offsetHeight /2)+1.6;
+    document.querySelector(".cellphone").style.opacity = - window.pageYOffset / (document.querySelector(".firstContainer").offsetHeight /2)+1;
     document.querySelector(".shadow").style.height = `${window.pageYOffset * 0.5 + 500}px`;
 
     })
@@ -23,7 +24,7 @@ function Landing() {
   
   return (
     <main>
-      <div id='firstImage' className='parallaxBackground'>
+      <div id='firstImage' className='firstContainer'>
         <img src={Laptop} className='laptop translate' data-speed="0.45" alt='laptop'/>
         <img src={Profile} className='profile translate'data-speed="0.4" alt='profile'/>
         <img src={Cellphone} className='cellphone translate' data-speed="-0.8" alt='cellphone'/>
@@ -41,13 +42,16 @@ function Landing() {
           </div>
         </div>
       </div>
-      <div id='skills' className='container'>
-        <div className="shadow"></div>
+      <div id='skills' >
+        <div className="shadow"/>
+        <div id='leftColumn' >
       <Overview/>
       </div>
-      <div id='secondImage' className='container'>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste nesciunt id delectus excepturi esse unde repellat voluptate, alias consequatur placeat dolor voluptatibus nulla repellendus laudantium doloribus, vel eligendi! Atque, nam.</p>
+      <div id='rightColumn' >
+       <Portfolio/>
       </div>
+      </div>
+      
       <div id='footer' className='container'>
         <p className='footerText'>© 2021 Adrian Perdomo Portfolio. All Rights Reserved. Published with React</p>
       </div>

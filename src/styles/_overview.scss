@@ -1,23 +1,44 @@
 @import './_variables.scss';
 
+.overviewMainContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  &-column {
+    position: relative;
+    width: 45%;
+    min-height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+}
+
+
 .titlePosition {
   position: absolute;
   top: 0px;
   left: 0px;
 }
 .divider {
-  width: 40%;
+  width: 80%;
   height: 3px;
-  border-radius: 5px;
-  background-color: $white;
   position: absolute;
   top: 40px;
   left: 0px;
+  border-radius: 5px;
+  background-color: $white;
 }
 
 .verticalDivider {
   width: 3px;
-  height: 70%;
+  height: 60%;
   border-radius: 5px;
   background-color: $white;
   // position: absolute;
@@ -25,38 +46,19 @@
   // left: 0px;
 }
 .content {
-  transform: translateY(-40px);
-}
-.skillsColumn {
-  transform: translateX(50px);
-}
-
-.area3 {
-  width: 100%;
-  height: 49vh;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  transform: translateY(-60px);
 
   &-school ul li {
     font-size: 1.2rem;
     color: $magic-mint;
   }
+}
 
-  &-2dividers {
-    position: relative;
-    width: 40%;
-    min-height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-  }
+.skillsColumn {
+  transform: translateY(60px);
 
   &-skillArea {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -99,3 +101,5 @@
     width: 2rem;
   }
 }
+
+
