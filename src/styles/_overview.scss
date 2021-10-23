@@ -65,6 +65,7 @@
 
 
 
+
 .content {
   transform: translateY(-70px);
 
@@ -134,12 +135,9 @@
     &-skillArea {
       height: 65%;
       width: 80%;
-      overflow: scroll;
+    
     }
     &-skill {
-      width: 6rem !important;
-      height: 2.5rem !important;
-      margin-top: 1rem;
       font-size: 0.8rem;
     }
   }
@@ -147,9 +145,38 @@
 
 @media only screen and (max-width: 922px) {
 
+  .skillsColumn {
+    &-skillArea {
+      overflow: scroll;
+    }
+  }
   .content {
     &-school ul li {
       font-size: 0.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .skillsColumn {
+    &-skillArea {
+      // height: 65%;
+      width: 95%;
+      overflow: scroll;
+    }
+    &-skill {
+      width: 40% ;
+      height: 20%;
+      margin-top: 1rem;
+      font-size: 0.4rem;
+    }
+  }
+  .content {
+    &-school ul li {
+      font-size: 0.64rem;
+      height: 60%;
+
     }
   }
 }
