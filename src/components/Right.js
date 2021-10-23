@@ -72,13 +72,13 @@ function Right() {
           </li>
           <li className='contactMe-line'>
             <img className='contactMe-icon' src={github} alt='linkedin icon' />
-            <a href='https://github.com/aperdomoll90' target='_Blank'>
+            <a href='https://github.com/aperdomoll90' rel="noreferrer" target='_Blank'>
               https://github.com/aperdomoll90
             </a>
           </li>
           <li className='contactMe-line'>
             <img className='contactMe-icon' src={linkedin} alt='linkedin icon' />
-            <a href='https://www.linkedin.com/in/adrian-perdomo-12997474/' target='_Blank'>
+            <a href='https://www.linkedin.com/in/adrian-perdomo-12997474/' rel="noreferrer" target='_Blank'>
               https://www.linkedin.com/in/adrian-perdomo-12997474/
             </a>
           </li>

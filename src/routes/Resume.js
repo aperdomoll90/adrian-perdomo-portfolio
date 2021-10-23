@@ -13,7 +13,7 @@ function Resume() {
         <div className='profileField'>
           <p>ADRIAN</p>
           <div className='profileField-profile'>
-            <img src={resumeProfile} />
+            <img alt='Adrian Perdomo Profile' src={resumeProfile} />
           </div>
           <p>PERDOMO</p>
         </div>

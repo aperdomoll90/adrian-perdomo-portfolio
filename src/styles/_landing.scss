@@ -1,0 +1,123 @@
+@import './_variables.scss';
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.parallaxBackground {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.parallaxBackground:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 25;
+}
+
+// To make parallax
+// background-attachment: fixed;
+// background-position: center;
+// background-repeat: no-repeat;
+// background-size: cover;
+
+.laptop {
+  position: absolute;
+  bottom: -250px;
+  width: 1680px;
+  left: 0;
+  z-index: 17;
+}
+.profile {
+  position: absolute;
+  bottom: -50px;
+  width: 520px;
+  left: -35px;
+  z-index: 20;
+}
+.cellphone {
+  position: absolute;
+  bottom: -50px;
+  width: 600px;
+  right: -80px;
+  z-index: 19;
+}
+
+.titleBox {
+  width: 40%;
+  position: absolute;
+  bottom: 120px;
+  left: 500px;
+  z-index: 21;
+  font-size: 1rem;
+  text-align: left;
+
+  &-name {
+    font-weight: $font-semibold;
+    color: $amaranth;
+    font-size: 1.5rem;
+    & span {
+      color: $button-orange-color;
+      font-size: 1.8rem;
+    }
+  }
+
+  &-bold {
+    font-weight: $font-bold;
+    color: $amaranth;
+    font-size: 3.4rem;
+  }
+  &-description {
+    // color: $amaranth;
+    font-size: 1rem;
+  }
+}
+// #firstImage{
+//     background-image: url(../elements/test/laptop.png);
+// }
+
+#secondImage {
+  min-width: 100%;
+  height: 70vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../elements/test/Table.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.shadow{
+    min-width: 100%;
+    min-height: 400px;
+    position: absolute;
+    left: 0;
+    bottom: -5%;
+    z-index: 20;
+    background: linear-gradient(to bottom, transparent, $metal);
+    // background: linear-gradient(to bottom, $metal, transparent );
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#skills {
+  min-width: 100vw;
+  min-height: 50vh;
+  background-color: $metal;
+  //   background: linear-gradient(to bottom,$metal, black);
+}
+#footer {
+  min-width: 100vw;
+  min-height: 7vh;
+  background-color: $metal;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}

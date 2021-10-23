@@ -3,9 +3,10 @@ import '../styles/_main.scss'
 import portrait from '../elements/profile.png'
 import Sapphire from '../elements/sapphireFeature/sapphire'
 import affirmations from '../elements/affirma.png'
-import burger from '../elements/burger.png'
 import linkedin from '../elements/linkedin.png'
 import github from '../elements/github.png'
+import Rockval from '../elements/RockvalApp.mov'
+import Overview from '../components/Overview'
 
 function ContactMe() {
   return (
@@ -18,24 +19,24 @@ function ContactMe() {
             </p>
             <p className='titleBox-bold'>Full Stack Dev</p>
             <p className='titleBox-description'>
-              Welcome to my portfolio. I am a Full-stack Software Engineer, certified EMT, fluent in English and Spanish, has worked in medical data and medical finance as well as IT at a medical school. I love art, cooking, baking, medical applications of technology, nanotechnology, automation, AI,
+              Welcome to my portfolio. I am a Full-stack Software Engineer, mobile developer, certified EMT, fluent in English and Spanish, has worked in medical data and medical finance as well as IT at a medical school. I love art, cooking, baking, medical applications of technology, nanotechnology, automation, AI,
               and I hope to improve lives through my work.
             </p>
           </div>
         </div>
         <div className='personalLinks'>
-          <a href='https://www.linkedin.com/in/adrian-perdomo-12997474/' target='_Blank'>
+          <a href='https://www.linkedin.com/in/adrian-perdomo-12997474/' rel="noreferrer" target='_Blank'>
             <div className='navBarIcon'>
-              <img src={linkedin} className='navBarIcon-img' />
+              <img alt='linkedIn Icon' src={linkedin} className='navBarIcon-img' />
               <div className='navBarIcon-overlay personalLinks-overlay'>
                 <div className='navBarIcon-title'>LinkedIn </div>
               </div>
             </div>
           </a>
 
-          <a href='https://github.com/aperdomoll90' target='_Blank'>
+          <a href='https://github.com/aperdomoll90' rel="noreferrer" target='_Blank'>
             <div className='navBarIcon'>
-              <img src={github} className='navBarIcon-img' />
+              <img alt='github Icon' src={github} className='navBarIcon-img' />
               <div className='navBarIcon-overlay personalLinks-overlay'>
                 <div className='navBarIcon-title'>Github </div>
               </div>
@@ -43,7 +44,7 @@ function ContactMe() {
           </a>
         </div>
 
-        <img src={portrait} id='portrait' />
+        <img alt=' Adrian perdomo portrait' src={portrait} id='portrait' />
       </section>
 
       <div className='Stripe'>
@@ -51,80 +52,50 @@ function ContactMe() {
           <p className="featureBox-title">Mind Sapphire</p>
           <Sapphire />
           <div className='featureLinks'>
-            <a href='https://mindsapphire.com/' target='_Blank'>
+            <a href='https://mindsapphire.com/' rel="noreferrer" target='_Blank'>
               Demo
             </a>
-            <a href='https://github.com/aperdomoll90/mindsapphire' target='_Blank'>
+            <a href='https://github.com/aperdomoll90/mindsapphire' rel="noreferrer" target='_Blank'>
               Github
             </a>
-            <a href='https://github.com/aperdomoll90/mindsapphire-api' target='_Blank'>
+            <a href='https://github.com/aperdomoll90/mindsapphire-api' rel="noreferrer" target='_Blank'>
               API
             </a>
           </div>
         </div>
         <div className='featureBox'>
           <p className="featureBox-title">Sweet Affirmations</p>
-          <img src={affirmations}  />
+          <img alt='stars and hearts Icon' src={affirmations}  />
           <div className='featureLinks'>
-            <a href='https://afirmap-fc6fa.web.app/' target='_Blank'>
+            <a href='https://afirmap-fc6fa.web.app/' rel="noreferrer" target='_Blank'>
               Demo
             </a>
-            <a href='https://github.com/aperdomoll90/AffirmationsApp' target='_Blank'>
+            <a href='https://github.com/aperdomoll90/AffirmationsApp' rel="noreferrer" target='_Blank'>
               Github
             </a>
-            <a href='https://github.com/aperdomoll90/Affirmations-api' target='_Blank'>
+            <a href='https://github.com/aperdomoll90/Affirmations-api' rel="noreferrer" target='_Blank'>
               API
             </a>
           </div>
         </div>
         <div className='featureBox'>
-          <p className="featureBox-title">Nikki's Restaurants</p>
-          <img src={burger} className='featureBox-burger' />
-          <div className='featureLinks'>
-            <a href='https://nikkis-restaurant-app.web.app/' target='_Blank'>
+          <p className="featureBox-title">Rockval Mobile</p>
+          <video src={Rockval} width="200" height="320" controls="controls" autoplay="true" />
+          {/* <div className='featureLinks'>
+            <a href='https://nikkis-restaurant-app.web.app/' rel="noreferrer" target='_Blank'>
               Demo
             </a>
-            <a href='https://github.com/aperdomoll90/restaurantes-by-nikki' target='_Blank'>
+            <a href='https://github.com/aperdomoll90/restaurantes-by-nikki' rel="noreferrer" target='_Blank'>
               Github
             </a>
-            <a href='https://github.com/aperdomoll90/restaurantes-by-nikki' target='_Blank'>
+            <a href='https://github.com/aperdomoll90/restaurantes-by-nikki' rel="noreferrer" target='_Blank'>
               API
             </a>
-          </div>
+          </div> */}
       </div>
       </div>
 
-      <section className='area3'>
-        <div className='area3-2dividers'>
-          <div className='titleBox-name'>Education</div>
-          <div className='featureBox-schoolSkill'>
-            <ul>
-              <li>Software Engineering Career Course Boca Code 04/2020 - 06/2020</li>
-              <li>Associate in Arts Degree (Marketing) Palm Beach State College</li>
-              <li>09/2014 – Present EMT, Certification Palm Beach State College</li>
-              <li>03/2015 – 09/2015 Bachelor of Science, Information Technology</li>
-              <li>Institute Polytechnic Informatics Raul Cepero Bonilla 09/2005 – 07/2008</li>
-            </ul>
-          </div>
-        </div>
-        <div className='area3-2dividers'>
-          <p className='titleBox-name'>Most used Skills</p>
-          <div className='area3-skillArea'>
-            <div className='area3-skill area3-yellow'>React</div>
-            <div className='area3-skill area3-blue'>React Native</div>
-            <div className='area3-skill area3-orange'>Electron</div>
-            <div className='area3-skill area3-purple'>JavaScript</div>
-            <div className='area3-skill area3-yellow'>SQL / NoSQL</div>
-            <div className='area3-skill area3-red'>HTML</div>
-            <div className='area3-skill area3-blue'>CSS</div>
-            <div className='area3-skill area3-yellow'>SASS</div>
-            <div className='area3-skill area3-green'>Node</div>
-            <div className='area3-skill area3-purple'>Express</div>
-            <div className='area3-skill area3-green'>Mongo db</div>
-            <div className='area3-skill area3-purple'>Firebase</div>
-          </div>
-        </div>
-      </section>
+     <Overview/>
     </main>
   )
 }
