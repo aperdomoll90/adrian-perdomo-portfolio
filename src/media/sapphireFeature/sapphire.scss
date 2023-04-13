@@ -567,7 +567,7 @@
       height: 100%;
       width: 50%;
       border-radius: 50%;
-      background-color: $cloud-color;
+      background-color: var(cloud-color);
       position: absolute;
       top: -3%;
       left: 25%;
@@ -593,7 +593,7 @@
     &-base {
       height: 25%;
       width: 80%;
-      background-color: $cloud-color;
+      background-color: var(cloud-color);
       position: absolute;
       top: 73%;
       left: 16%;
@@ -612,7 +612,7 @@
       height: 100%;
       width: 50%;
       border-radius: 50%;
-      background-color: $cloud-color;
+      background-color: var(cloud-color);
       position: absolute;
       left: 25%;
       top: -3%;
@@ -638,7 +638,7 @@
     &-base {
       height: 35%;
       width: 80%;
-      background-color: $cloud-color;
+      background-color: var(cloud-color);
       position: absolute;
       top: 63%;
       left: 16%;
@@ -716,7 +716,7 @@
       position: absolute;
       top: 18%;
       right: 0%;
-      background-color: $drkCanopy-color;
+      background-color: var(drkCanopy-color);
       animation: canopyBack 10s infinite alternate;
     }
   }
@@ -739,7 +739,7 @@
       top: -3%;
       left: 25%;
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.376);
-      background-color: $canopy-color;
+      background-color: var(canopy-color);
     }
     &-circle:nth-child(2) {
       height: 45%;
@@ -747,13 +747,13 @@
       top: 33%;
       left: 0%;
       z-index: 2;
-      background-color: $smallCanopy-color;
+      background-color: var(smallCanopy-color);
       animation: canopyPart 10s infinite alternate;
     }
   
     &-circle:nth-child(3) {
       z-index: 4;
-      background-color: $mdmCanopy-color;
+      background-color: var(mdmCanopy-color);
       height: 60%;
       width: 50%;
       top: 40%;
@@ -762,7 +762,7 @@
     }
     &-circle:nth-child(4) {
       z-index: 6;
-      background-color: $mdm2canopy-color;
+      background-color: var(mdm2canopy-color);
       height: 70%;
       width: 60%;
       top: 45%;

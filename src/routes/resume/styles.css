@@ -1,5 +1,3 @@
-@import './_variables.scss';
-
 .header {
   width: 100vw;
   height: 35vh;
@@ -7,22 +5,22 @@
   align-items: flex-end;
   justify-content: center;
 }
-.downloadButton{
+.downloadButton {
   margin: 2%;
   position: absolute;
   top: 0%;
   right: 50%;
-  background-color: $button-orange-color;
+  background-color: var(--button-orange-color);
 }
 h3 {
   font-size: 1.5rem;
-  color: $font-test-light-color;
-  font-weight: $font-semibold;
+  color: var(--font-test-light-color);
+  font-weight: var(--font-semibold);
 }
 h4 {
   font-size: 1.5rem;
-  color: $font-test-color;
-  font-weight: $font-semibold;
+  color: var(--font-test-color);
+  font-weight: var(--font-semibold);
 }
 
 .profileField {
@@ -34,25 +32,26 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  &-profile {
-    height: 100%;
-    width: 34%;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $font-test-color;
-    margin: 3%;
-    & img {
-      height: 97%;
-    }
-  }
-  & p {
-    font-size: 2.5rem;
-    color: $font-name-color;
-    font-weight: $font-bold;
-  }
+.profileField-profile {
+  height: 100%;
+  width: 34%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--font-test-color);
+  margin: 3%;
+}
+
+.profileField-profile img {
+  height: 97%;
+}
+.profileField p {
+  font-size: 2.5rem;
+  color: var(--font-name-color);
+  font-weight: var(--font-bold);
 }
 @media only screen and (max-width: 1025px) {
   .header {
@@ -83,7 +82,7 @@ h4 {
   left: 50%;
   top: 40%;
   border-radius: 50%;
-  border-left: 2px solid $font-test-color;
+  border-left: 2px solid var(--font-test-color);
   position: absolute;
 }
 
@@ -111,11 +110,11 @@ h4 {
   }
 }
 .company {
-  color: $font-secondary-color;
+  color: var(--font-secondary-color);
 }
 .position {
-  color: $title-font-color;
-  font-weight: $font-semibold;
+  color: var(--title-font-color);
+  font-weight: var(--font-semibold);
 }
 
 .resumeSkills {
@@ -155,76 +154,73 @@ h4 {
   .resumeSkills {
     flex-direction: row;
     width: 100%;
-    & p {
-      font-size: 0.7rem;
-      width: 4rem;
-      justify-content: space-between;
-    }
   }
-  .contactMe {
-    &-line {
-      font-size: 0.5rem;
-    }
+  .resumeSkills p {
+    font-size: 0.7rem;
+    width: 4rem;
+    justify-content: space-between;
+  }
+  .contactMe-line {
+    font-size: 0.5rem;
   }
 }
 
 .hobbyArea {
-    width:70%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 3%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3%;
+  overflow: hidden;
 }
-.imageOverlay{
+.imageOverlay {
   position: relative;
   width: 19%;
   margin: 2%;
-
-  &-img {
-    width: 100%;
-    display: block;
-  }
-  &-overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.25s;
-  }
-  &-overlay > * {
-    transform: translateY(10px);
-    transition: transform 0.25s;  
-  }
-  &-overlay:hover {
-    opacity: 1;
-  }
-  &-overlay:hover > * {
-    transform: translateY(0px);
-  }
-  &-title {
-    color: white;
-  }
 }
 
-
+.imageOverlay-img {
+  width: 100%;
+  display: block;
+}
+.imageOverlay-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.imageOverlay-overlay > * {
+  transform: translateY(10px);
+  transition: transform 0.25s;
+}
+.imageOverlay-overlay:hover {
+  opacity: 1;
+}
+.imageOverlay-overlay:hover > * {
+  transform: translateY(0px);
+}
+.imageOverlay-title {
+  color: white;
+}
 
 @media only screen and (max-width: 1025px) {
-    .hobbyArea  {
-        width:90%;
-        flex-direction: row;
-    
-    & img {
-        width: 5.6vh;
-        height: auto;
-    }
-    .imageOverlay{
-      width: 25%;
-      margin: 3%;}
+  .hobbyArea {
+    width: 90%;
+    flex-direction: row;
+  }
+  .imageOverlay {
+    width: 25%;
+    margin: 3%;
+  }
+  .hobbyArea img {
+    width: 5.6vh;
+    height: auto;
   }
 }

@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/_overview.scss'
-import 'materialize-css'
 
 function Overview() {
 

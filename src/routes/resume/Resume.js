@@ -1,9 +1,9 @@
 import React from 'react'
-import '../styles/_main.scss'
-import Left from '../components/Left'
-import Right from '../components/Right'
+import './styles.css'
+import Left from './Left'
+import Right from './Right'
 
-import resumeProfile from '../elements/resumeProfile.png'
+import resumeProfile from '../../media/resumeProfile.png'
 
 function Resume() {
   return (
