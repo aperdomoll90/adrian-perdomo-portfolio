@@ -10,6 +10,7 @@ import karaoke from '../../media/karaoke.png'
 import baking from '../../media/baking.png'
 import painting from '../../media/painting.png'
 import traveling from '../../media/traveling.png'
+import HobbyPin from '../../components/hobbyPin'
 
 function Right() {
   return (
@@ -88,48 +89,13 @@ function Right() {
       <div>
         <h4>HOBBIES</h4>
         <div className='hobbyArea'>
-          <div className='imageOverlay'>
-            <img className='imageOverlay-img' alt='Icon of a dumbbell' src={gym} />
-            <div className='imageOverlay-overlay'>
-              <div className='imageOverlay-title'>GYM </div>
-            </div>
-          </div>
-          <div className='imageOverlay'>
-            <img className='imageOverlay-img' alt='Icon of cooking tools' src={cooking} />
-            <div className='imageOverlay-overlay'>
-              <div className='imageOverlay-title'>Cooking </div>
-            </div>
-          </div>
-          <div className='imageOverlay'>
-            <img className='imageOverlay-img' alt='icon of gardening tools' src={gardening} />
-            <div className='imageOverlay-overlay'>
-              <div className='imageOverlay-title'>Gardening </div>
-            </div>
-          </div>
-          <div className='imageOverlay'>
-            <img className='imageOverlay-img' alt='icon of karaoke microphone' src={karaoke} />
-            <div className='imageOverlay-overlay'>
-              <div className='imageOverlay-title'>Karaoke </div>
-            </div>
-          </div>
-          <div className='imageOverlay'>
-            <img className='imageOverlay-img' alt='icon of baking tools' src={baking} />
-            <div className='imageOverlay-overlay'>
-              <div className='imageOverlay-title'>Baking </div>
-            </div>
-          </div>
-          <div className='imageOverlay'>
-            <img className='imageOverlay-img' alt='icon of a painting brush' src={painting} />
-            <div className='imageOverlay-overlay'>
-              <div className='imageOverlay-title'>Painting </div>
-            </div>
-          </div>
-          <div className='imageOverlay'>
-            <img className='imageOverlay-img' alt='Icon of a plane flying' src={traveling} />
-            <div className='imageOverlay-overlay'>
-              <div className='imageOverlay-title'>Traveling </div>
-            </div>
-          </div>
+          <HobbyPin label='GYM' image={gym} inAlt='Icon of a dumbbell' />
+          <HobbyPin label='Cooking' image={cooking} inAlt='Icon of cooking tools' />
+          <HobbyPin label='Gardening' image={gardening} inAlt='icon of gardening tools' />
+          <HobbyPin label='Karaoke' image={karaoke} inAlt='icon of karaoke microphone' />
+          <HobbyPin label='Baking' image={baking} inAlt='icon of baking tools' />
+          <HobbyPin label='Painting' image={painting} inAlt='icon of a painting brush' />
+          <HobbyPin label='Traveling' image={traveling} inAlt='Icon of a plane flying' />
         </div>
       </div>
     </div>
