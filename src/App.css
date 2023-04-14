@@ -6,28 +6,26 @@
   box-sizing: border-box;
 }
 :root {
---primary-StripeColor: #B5FFE1;
---secondary-color: #161d26;
---secondary-transColor: #1f283590;
---section1-color: #000001;
+  --primary-StripeColor: #b5ffe1;
+  --secondary-color: #161d26;
+  --secondary-transColor: #1f283590;
+  --section1-color: #000001;
 
---title-font-color: #0abead;
---font-primary-color: #95a5c6;
---font-secondary-color: #91a2c2;
---font-third-color: #6a758d;
---font-test-color: #63626a;
---font-test-light-color: #d3c9c9;
---font-name-color: #af2853;
+  --title-font-color: #0abead;
+  --font-primary-color: #95a5c6;
+  --font-secondary-color: #91a2c2;
+  --font-third-color: #6a758d;
+  --font-test-color: #63626a;
+  --font-test-light-color: #d3c9c9;
+  --font-name-color: #af2853;
 
---font-regular: 400;
---font-medium: 500;
---font-semibold: 600;
---font-bold: 700;
---font-black: 900;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-black: 900;
 
-
-
-/* --cloud-color:whitesmoke;
+  /* --cloud-color:whitesmoke;
 --snow-color:rgb(220, 255, 206);
 --canopy-color:rgb(101, 219, 248);
 --drkCanopy-color:rgb(53, 121, 138);
@@ -35,17 +33,17 @@
 --mdm2canopy-color:rgb(11, 118, 144);
 --smallCanopy-color:rgb(166, 225, 240); */
 
---button-orange-color: #E59500;
---button-on-hover: #08bbaa;
+  --button-orange-color: #e59500;
+  --button-on-hover: #08bbaa;
 
---primary-color: #000000;
---magic-mint:#B5FFE1;
---violet-color:#541388;
---gamboge:#E59500;
---amaranth:#D93654;
---white:#f2f2f2;
---transparent-metal:#15151596;
---metal:#151515;
+  --primary-color: #000000;
+  --magic-mint: #b5ffe1;
+  --violet-color: #541388;
+  --gamboge: #e59500;
+  --amaranth: #d93654;
+  --white: #f2f2f2;
+  --transparent-metal: #15151596;
+  --metal: #151515;
 }
 
 body {
@@ -54,3 +52,20 @@ body {
   background-color: var(--primary-color);
 }
 
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--font-test-light-color);
+  font-weight: var(--font-semibold);
+}
+h4 {
+  font-size: 1.5rem;
+  color: var(--font-test-color);
+  font-weight: var(--font-semibold);
+}

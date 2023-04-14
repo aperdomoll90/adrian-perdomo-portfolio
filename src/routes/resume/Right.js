@@ -1,4 +1,5 @@
 import React from 'react'
+import './right.css'
 import mail from '../../media/mail.png'
 import phone from '../../media/phone.png'
 import linkedin from '../../media/linkedin.png'
@@ -14,7 +15,7 @@ import HobbyPin from '../../components/hobbyPin'
 
 function Right() {
   return (
-    <div className='right'>
+    <div className='resume-column right'>
       <div className='experience'>
         <h4>EDUCATION</h4>
         <div>

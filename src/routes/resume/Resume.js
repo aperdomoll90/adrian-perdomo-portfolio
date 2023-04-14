@@ -7,9 +7,8 @@ import resumeProfile from '../../media/resumeProfile.png'
 
 function Resume() {
   return (
-    <main >
-      
-      <section className='header'>
+    <div id='resume-grid-container'>
+      <div className='header'>
         <div className='profileField'>
           <p>ADRIAN</p>
           <div className='profileField-profile'>
@@ -18,14 +17,12 @@ function Resume() {
           <p>PERDOMO</p>
         </div>
         <h3>FULL STACK SOFTWARE DEVELOPER</h3>
-      </section>
-      <section className='portfolioContent'>
-        <Left />
-        <div className='vertical'></div>
-        <Right />
-      </section>
-      <section className='footer'></section>
-    </main>
+      </div>
+
+      <Left />
+      <div id="divider"></div>
+      <Right />
+    </div>
   )
 }
 

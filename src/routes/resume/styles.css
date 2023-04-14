@@ -1,26 +1,30 @@
+#resume-grid-container {
+  display: grid;
+  width: 100vw;
+  overflow: hidden;
+  padding: 1rem;
+  grid-template-columns: 48vw 2vw 48vw;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'header  header header'
+    'left divider right'
+    'left footer right';
+}
+.resume-column{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
+  grid-area: header;
   width: 100vw;
   height: 35vh;
+  margin-top: 2rem;
+  /* position: relative; */
   display: flex;
   align-items: flex-end;
   justify-content: center;
-}
-.downloadButton {
-  margin: 2%;
-  position: absolute;
-  top: 0%;
-  right: 50%;
-  background-color: var(--button-orange-color);
-}
-h3 {
-  font-size: 1.5rem;
-  color: var(--font-test-light-color);
-  font-weight: var(--font-semibold);
-}
-h4 {
-  font-size: 1.5rem;
-  color: var(--font-test-color);
-  font-weight: var(--font-semibold);
 }
 
 .profileField {
@@ -53,6 +57,22 @@ h4 {
   color: var(--font-name-color);
   font-weight: var(--font-bold);
 }
+
+#divider {
+  grid-area: divider;
+  position: relative;
+  min-height: 100%;
+}
+#divider::after {
+  content: '';
+  height: 128vh;
+  position: absolute;
+  top: 5rem;
+  /* left: 20rem; */
+  border-radius: 50%;
+  border-left: 2px solid var(--font-test-color);
+}
+
 @media only screen and (max-width: 1025px) {
   .header {
     height: 25vh;
@@ -70,115 +90,8 @@ h4 {
   .profileField p {
     font-size: 1.3rem;
   }
-}
-.portfolioContent {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.vertical {
-  height: 128vh;
-  left: 50%;
-  top: 40%;
-  border-radius: 50%;
-  border-left: 2px solid var(--font-test-color);
-  position: absolute;
-}
-
-.left {
-  width: 47%;
-  display: flex;
-  text-align: end;
-  flex-direction: column;
-  padding-left: 5%;
-}
-.right {
-  width: 47%;
-  display: flex;
-  text-align: start;
-  flex-direction: column;
-}
-@media only screen and (max-width: 1025px) {
   .vertical {
     height: 130vh;
     top: 30%;
-  }
-  .left {
-    height: 140vh;
-    overflow-y: scroll;
-  }
-}
-.company {
-  color: var(--font-secondary-color);
-}
-.position {
-  color: var(--title-font-color);
-  font-weight: var(--font-semibold);
-}
-
-.resumeSkills {
-  width: 30vw;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.resumeSkills p {
-  display: flex;
-  width: 7rem;
-  height: 2.5rem;
-  align-items: center;
-  justify-content: center;
-}
-.contactMe {
-  width: 46vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.contactMe-line {
-  width: 20vw;
-  margin: 2%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.contactMe-icon {
-  width: 2rem;
-  height: auto;
-  margin-right: 3%;
-}
-
-@media only screen and (max-width: 1025px) {
-  .resumeSkills {
-    flex-direction: row;
-    width: 100%;
-  }
-  .resumeSkills p {
-    font-size: 0.7rem;
-    width: 4rem;
-    justify-content: space-between;
-  }
-  .contactMe-line {
-    font-size: 0.5rem;
-  }
-}
-
-.hobbyArea {
-  width: 70%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 3%;
-  overflow: hidden;
-}
-
-@media only screen and (max-width: 1025px) {
-  .hobbyArea {
-    width: 90%;
-    flex-direction: row;
   }
 }
